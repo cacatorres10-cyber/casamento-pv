@@ -15,7 +15,7 @@ só, uma requisição só, carrega rápido no 4G e é fácil de colar em qualque
 
 ---
 
-## Antes de publicar: 4 coisas para preencher
+## Antes de publicar: 5 coisas para preencher
 
 Todas estão marcadas dentro do `index.html`.
 
@@ -23,23 +23,24 @@ Todas estão marcadas dentro do `index.html`.
    `LINK_CHECKOUT_COMPLETO` e troque pelos links reais. Enquanto estiverem assim,
    o botão não leva a lugar nenhum e o evento `InitiateCheckout` do Pixel dispara
    sem venda possível.
-2. **A quebra dos R$ 6.697,70.** Na seção "Como um casamento cabe em R$ 45 por
+2. **O nome do app.** Procure por `NOME_DO_APP`, na seção "E hoje tudo isso virou um
+   aplicativo". No resto do material o produto se chama Casamento Possível.
+3. **A quebra dos R$ 6.697,70.** Na seção "Como um casamento cabe em R$ 45 por
    convidado" existe o quadro `ONDE FORAM PARAR OS MEUS R$ 6.697,70` com cinco linhas
    em `R$ ___`. Preencha com os valores reais do casamento da Aline. **Não invente
    número:** o quadro inteiro existe para provar que a ordem das escolhas é o que
    importa, e um valor inventado derruba a prova toda. Se você não tiver a quebra
    real, apague o quadro em vez de estimar.
-3. **O print da conversa dentro do app.** Na seção "E hoje tudo isso virou um
-   aplicativo" tem um comentário `<!-- TROCAR PELO PRINT REAL -->`. A conversa do print
-   precisa ser uma resposta que o app realmente dá hoje.
-4. **As imagens.** Siga o `images/LEIA-ME.md`. São 17 arquivos, com os mesmos nomes
-   que a página no ar já usa.
+4. **O print da conversa dentro do app.** Na seção do aplicativo tem um comentário
+   `<!-- TROCAR PELO PRINT REAL -->`. A conversa do print precisa ser uma resposta
+   que o app realmente dá hoje.
+5. **As imagens.** Siga o `images/LEIA-ME.md`. São 17 arquivos, com os mesmos nomes
+   que a página no ar já usa. Enquanto o arquivo não estiver na pasta, o navegador
+   mostra ícone de imagem quebrada naquele ponto.
 
 ---
 
 ## Preço e planos que estão na página
-
-Dois planos, como veio na nova versão:
 
 | Plano | Preço | O que tem |
 |---|---|---|
@@ -70,15 +71,9 @@ urgência, use lote ou prazo que você vá respeitar de verdade.
 
 ---
 
-## Decisões tomadas nesta versão (revise se discordar)
+## Histórico
 
-1. **`NOME_DO_APP` virou "Casamento Possível"**, que é o nome que o produto já usava
-   no repositório. Se o nome comercial for outro, é uma troca só, na seção do app.
-2. **As imagens continuam em `images/`**, com os nomes originais, para você conseguir
-   copiar a pasta da hospedagem atual sem renomear nada.
-3. **Imagem que ainda não subiu vira placeholder listrado** com o nome do arquivo que
-   falta, em vez de ícone de imagem quebrada.
-4. **A versão anterior da página** (a de layout claro com `assets/css` e `assets/js`)
-   foi substituída por completa. Ela continua no histórico do git, no commit
-   "Página de vendas remodelada: do ebook para o app de assessoria", se você quiser
-   recuperar qualquer trecho de copy.
+A versão anterior da página (layout claro, com `assets/css/estilo.css` e
+`assets/js/pagina.js`) foi substituída por completo. Ela continua no histórico do git,
+no commit "Página de vendas remodelada: do ebook para o app de assessoria", se você
+quiser recuperar algum trecho de copy.

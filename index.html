@@ -123,16 +123,13 @@ u{text-decoration:underline}
 /* caixa tracejada */
 .tracejada{border:2px dashed var(--verde);border-radius:5px;padding:17px;margin:20px 0;font-style:italic;font-weight:600;text-align:center;font-size:16.5px}
 
-/* placeholder de imagem que ainda nao subiu */
-.semfoto{display:flex;align-items:center;justify-content:center;text-align:center;min-height:110px;padding:16px;border:2px dashed #C4C4C4;border-radius:4px;background:repeating-linear-gradient(45deg,#F5F5F5,#F5F5F5 10px,#EBEBEB 10px,#EBEBEB 20px);color:#767676;font-size:13px;line-height:1.45;font-weight:600}
-
 /* faq */
 .faq-q{color:var(--vermelho);font-weight:700;font-size:clamp(18px,4.6vw,22px);text-align:center;margin:20px 0 10px;line-height:1.25}
 .selo{max-width:128px;margin:12px auto}
 
 /* conta aberta */
 .conta{border:2px solid var(--vinho);border-radius:5px;padding:14px;margin:18px 0;background:#fff}
-.conta .cab{background:var(--vinho);color:#fff;margin:-14px -14px 14px;padding:10px 14px;text-align:center;font-weight:700;font-size:16px}
+.conta .cab{background:var(--vinho);color:#fff;margin:-18px -18px 14px;padding:10px 14px;text-align:center;font-weight:700;font-size:16px}
 .lin{display:flex;align-items:baseline;gap:8px;padding:6px 0;font-size:15.5px;border-bottom:1px dotted #CFCFCF}
 .lin:last-of-type{border-bottom:none}
 .lin .pts{flex:1 1 auto;min-width:10px}
@@ -274,7 +271,7 @@ u{text-decoration:underline}
   <div class="wrap">
     <img class="ic" src="images/1999145-_1_.webp" alt="" style="max-width:120px;margin:0 auto 14px">
     <h2>E hoje tudo isso virou um aplicativo</h2>
-    <p>Material não responde pergunta às onze da noite. Então o método virou o <strong>Casamento Possível</strong>: você conversa com ele como conversaria com uma assessora.</p>
+    <p>Material não responde pergunta às onze da noite. Então o método virou <strong>NOME_DO_APP</strong>: você conversa com ele como conversaria com uma assessora.</p>
     <p><strong>E ele responde sobre o SEU casamento.</strong> Não é conteúdo genérico nem lista pronta: você diz quanto tem, quantas pessoas vai convidar e onde mora, e ele monta o plano para o seu caso, a sua cidade e a sua data.</p>
     <div class="perg" style="margin:20px 0">
       <p>"Tenho R$ 18 mil e 90 convidados. Dá para fazer o quê?"</p>
@@ -456,20 +453,6 @@ u{text-decoration:underline}
     var na=r.top<window.innerHeight&&r.bottom>0;
     fixa.classList.toggle('on', window.scrollY>window.innerHeight*0.9 && !na);
   },{passive:true});
-  /* Imagem que ainda nao foi enviada vira um placeholder com o nome do arquivo,
-     em vez de icone quebrado. Assim que o arquivo entrar em images/, a foto aparece. */
-  function semFoto(img){
-    if(!img.parentNode) return;
-    var d=document.createElement('div');
-    d.className='semfoto';
-    d.textContent='Falta a imagem: '+(img.getAttribute('src')||'').replace('images/','');
-    img.parentNode.replaceChild(d,img);
-  }
-  document.querySelectorAll('img').forEach(function(img){
-    img.addEventListener('error',function(){semFoto(img);});
-    if(img.complete&&img.naturalWidth===0) semFoto(img);
-  });
-
   document.querySelectorAll('a.btn').forEach(function(a){
     a.addEventListener('click',function(){
       var h=a.getAttribute('href')||'';
