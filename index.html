@@ -1,1169 +1,482 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Casamento Possível | A assessoria de casamento que cabe no seu orçamento</title>
-<meta name="description" content="Um app que funciona como uma assessora de casamento ao seu lado: pega as suas referências, o seu dinheiro e a sua data e devolve um casamento possível, com preço, com ordem e com o próximo passo.">
-<meta property="og:title" content="E se o casamento que você salvou no Pinterest coubesse no orçamento que você tem?">
-<meta property="og:description" content="A assessoria de casamento que cabe no seu celular e no seu orçamento. Acesso imediato, 7 dias de garantia.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seu casamento dos sonhos cabe no orçamento que você tem</title>
+<meta name="description" content="Descubra como uma noiva realizou o casamento dos sonhos com R$ 6.697,70 e 150 convidados, sem abrir mão do vestido, da decoração nem das fotos.">
+<meta property="og:title" content="Seu casamento dos sonhos cabe no orçamento que você tem">
+<meta property="og:description" content="R$ 6.697,70, 150 convidados, sem abrir mão de nada.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','377342407834581');fbq('init','852344160745586');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=377342407834581&ev=PageView&noscript=1"></noscript>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=852344160745586&ev=PageView&noscript=1"></noscript>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --azul1:#7FC5FF; --azul2:#F0F9FF;
+  --verde:#47CB59; --verde2:#3AAF4A; --verdepreco:#0B9B00;
+  --vermelho:#DA0303; --vermelho2:#FF2525;
+  --vinho:#862039; --rosa:#EC0053;
+  --escuro:#242424; --cinza:#E4E4E4; --texto:#2D2D2D;
+}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--texto);font-family:"Montserrat",sans-serif;font-size:16.5px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:620px;margin:0 auto;padding:0 20px}
+.sec{padding:26px 0}
+.sec.cinza{background:var(--cinza)}
+.sec.escura{background:var(--escuro);color:#fff}
+.sec.vinho{background:var(--vinho);color:#fff}
+.sec.azul{background:linear-gradient(160deg,#52B0F2 0%,#8ECDFF 52%,var(--azul2) 100%)}
+
+h1,h2,h3{font-family:"Montserrat",sans-serif;margin:0 0 14px;line-height:1.2}
+h1{font-size:clamp(27px,7.2vw,34px);font-weight:800;text-align:center}
+h2{font-size:clamp(23px,5.9vw,28px);font-weight:700;text-align:center;color:#000}
+h3{font-size:21px;font-weight:700;text-align:center;color:var(--texto)}
+.sec.escura h2,.sec.escura h3,.sec.vinho h2,.sec.vinho h3{color:#fff}
+p{margin:0 0 14px}
+p:last-child{margin-bottom:0}
+strong{font-weight:700}
+u{text-decoration:underline}
+.centro{text-align:center}
+.mini{font-size:14px;line-height:1.5;color:#666}
+.sec.escura .mini,.sec.vinho .mini{color:#D8CDD0}
+
+/* hero */
+.hero{padding:34px 0 30px;text-align:center}
+.hero h1{color:#fff;text-shadow:0 2px 6px rgba(10,60,100,.38);margin-bottom:18px}
+.hero .cor{width:64px;margin:0 auto 16px}
+.hero p{color:#0D3550;font-size:16.5px;font-weight:600}
+
+/* perguntas em italico */
+.perg{margin:26px 0}
+.perg p{font-size:18px;font-weight:700;font-style:italic;text-align:center;color:var(--texto);line-height:1.28;margin-bottom:11px}
+
+/* preco */
+.preco{text-align:center;margin:24px 0 8px}
+.preco .de{font-family:"Poppins",sans-serif;font-size:clamp(22px,5.6vw,27px);font-weight:800;color:var(--vermelho);text-decoration:line-through;margin:0 0 4px;line-height:1.2}
+.preco .por{font-family:"Poppins",sans-serif;font-size:19px;font-weight:600;color:#000;margin:0 0 2px}
+.preco .val{font-family:"Poppins",sans-serif;font-size:clamp(56px,15vw,75px);font-weight:800;color:var(--verdepreco);line-height:1;margin:0 0 6px}
+.preco .tag{font-family:"Poppins",sans-serif;font-size:20px;font-weight:800;color:#000;margin:0}
+.hr{border:0;border-top:2px solid #C9C9C9;max-width:300px;margin:20px auto}
+
+/* botao */
+.btn{
+  display:block;width:100%;max-width:420px;margin:18px auto 0;background:var(--verde);color:#fff;
+  text-decoration:none;font-family:"Montserrat",sans-serif;font-weight:700;font-size:clamp(17px,4.4vw,22px);
+  padding:18px 14px;border-radius:4px;text-align:center;line-height:1.25;box-shadow:0 3px 0 var(--verde2);
+  transition:transform .12s ease,box-shadow .12s ease;
+}
+.btn:hover{transform:translateY(1px);box-shadow:0 2px 0 var(--verde2)}
+.btn:focus-visible{outline:3px solid #000;outline-offset:3px}
+.btnota{text-align:center;font-size:14px;color:#666;margin-top:10px}
+.sec.escura .btnota,.sec.vinho .btnota{color:#D8CDD0}
+
+/* prints de depoimento */
+.print{max-width:290px;margin:12px auto;border:1px solid #DDD;border-radius:4px;overflow:hidden}
+.duplo{display:grid;gap:14px;margin:22px 0}
+
+/* checks */
+.check{list-style:none;margin:20px 0;padding:0}
+.check li{position:relative;padding:0 0 11px 32px;font-size:15.5px;line-height:1.42}
+.check li::before{
+  content:"";position:absolute;left:0;top:3px;width:22px;height:22px;border-radius:50%;
+  background:var(--verde) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'><polyline points='4,13 9,18 20,6'/></svg>") center/13px no-repeat;
+}
+.barra-lista{list-style:none;margin:20px 0;padding:0}
+.barra-lista li{position:relative;padding:0 0 11px 32px;font-size:16px;font-weight:700;line-height:1.45}
+.barra-lista li::before{content:"";position:absolute;left:4px;top:4px;width:3px;height:20px;background:var(--vermelho);transform:rotate(28deg);border-radius:2px}
+
+/* destaque amarelo */
+.amarelo{display:inline-block;background:#FFF06A;padding:6px 16px;border-radius:3px;font-weight:600;font-size:19px;color:var(--texto)}
+
+/* caixa de bonus */
+.bonus{border:2px solid var(--vinho);border-radius:5px;overflow:hidden;margin:0 0 14px;background:#fff}
+.bonus .topo{background:var(--vinho);color:#fff;padding:9px 12px;text-align:center;font-size:clamp(19px,4.8vw,24px);font-weight:700;line-height:1.25}
+.bonus .corpo{padding:15px 14px}
+.bonus .corpo h3{margin-bottom:12px;font-size:20px}
+.bonus .ic{max-width:104px;margin:0 auto 10px}
+.bonus .medo{font-style:italic;font-weight:700;text-align:center;color:var(--vinho);font-size:15.5px;margin-bottom:8px}
+.bonus .quanto{color:var(--vermelho2);font-weight:700;font-size:19px;text-align:center;margin:12px 0 0}
+
+/* planos */
+.plano{background:#fff;border-radius:6px;padding:16px 14px 20px;margin:0 0 14px;color:var(--texto)}
+.pill{display:block;background:var(--escuro);color:#fff;font-weight:800;font-size:19px;text-align:center;padding:11px;border-radius:5px;margin:0 0 16px}
+.pill.rosa{background:var(--rosa)}
+.maisvendido{text-align:center;font-weight:700;font-size:15px;margin:-8px 0 14px;color:var(--texto)}
+.plano .check li{padding-bottom:12px;font-size:15.5px}
+.plano .valor{font-family:"Poppins",sans-serif;font-size:48px;font-weight:800;color:var(--verdepreco);text-align:center;line-height:1;margin:14px 0 2px}
+.plano .parc{text-align:center;font-size:15px;color:#555;margin:0}
+
+/* caixa tracejada */
+.tracejada{border:2px dashed var(--verde);border-radius:5px;padding:17px;margin:20px 0;font-style:italic;font-weight:600;text-align:center;font-size:16.5px}
+
+/* placeholder de imagem que ainda nao subiu */
+.semfoto{display:flex;align-items:center;justify-content:center;text-align:center;min-height:110px;padding:16px;border:2px dashed #C4C4C4;border-radius:4px;background:repeating-linear-gradient(45deg,#F5F5F5,#F5F5F5 10px,#EBEBEB 10px,#EBEBEB 20px);color:#767676;font-size:13px;line-height:1.45;font-weight:600}
+
+/* faq */
+.faq-q{color:var(--vermelho);font-weight:700;font-size:clamp(18px,4.6vw,22px);text-align:center;margin:20px 0 10px;line-height:1.25}
+.selo{max-width:128px;margin:12px auto}
+
+/* conta aberta */
+.conta{border:2px solid var(--vinho);border-radius:5px;padding:14px;margin:18px 0;background:#fff}
+.conta .cab{background:var(--vinho);color:#fff;margin:-14px -14px 14px;padding:10px 14px;text-align:center;font-weight:700;font-size:16px}
+.lin{display:flex;align-items:baseline;gap:8px;padding:6px 0;font-size:15.5px;border-bottom:1px dotted #CFCFCF}
+.lin:last-of-type{border-bottom:none}
+.lin .pts{flex:1 1 auto;min-width:10px}
+.lin .val{flex:0 0 auto;font-weight:800;white-space:nowrap}
+.lin.total{border-bottom:none;border-top:2px solid var(--vinho);margin-top:8px;padding-top:12px}
+.lin.total .val{color:var(--verdepreco);font-family:"Poppins",sans-serif;font-size:24px}
+
+.rodape{background:var(--escuro);color:#B5B5B5;padding:30px 0;text-align:center;font-size:14px;line-height:1.55}
+.rodape a{color:#E4E4E4}
+
+.fixa{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(36,36,36,.97);padding:9px 12px;transform:translateY(120%);transition:transform .25s ease}
+.fixa.on{transform:translateY(0)}
+.fixa .btn{margin:0 auto;padding:15px;font-size:17px}
+@media (prefers-reduced-motion:reduce){.fixa,.btn{transition:none}}
+@media (min-width:640px){
+  .sec{padding:54px 0}
+  .duplo{grid-template-columns:1fr 1fr}
+  .duplo .print{margin:0}
+}
+
+</style>
 </head>
 <body>
 
-<!-- ============================================================
-     1. HERO
-     ============================================================ -->
-<header class="hero">
-  <div class="hero-grid">
-    <div>
-      <span class="selo">Assessoria de casamento no seu celular</span>
-
-      <h1>E se o casamento que você salvou no Pinterest coubesse no orçamento que você realmente tem?</h1>
-
-      <p class="hero-sub">
-        Um app que funciona como uma assessora ao seu lado, do primeiro print até o "sim".
-        Você conta quanto tem, quantas pessoas quer chamar e quando quer casar.
-        Ele devolve um casamento possível: com preço, com ordem de contratação e com o
-        próximo passo desta semana.
-      </p>
-
-      <p class="hero-tensao">Sem planilha do zero. Sem descobrir preço tarde demais. Sem cara de improviso.</p>
-
-      <div class="cartao-destaque">
-        <span class="num">R$ 6.697,70</span>
-        <p style="margin-bottom:0;font-size:.95rem;color:var(--tinta-2)">
-          Foi quanto custou o casamento da Aline em 2022, com 150 convidados.
-          É o caso real que deu origem a este método e a referência de planejamento que você
-          vai usar dentro do app. O seu número final depende da sua cidade, da sua data e da
-          sua lista. O que não depende de nada disso é você saber, o tempo todo, para onde
-          cada real está indo.
-        </p>
-      </div>
-
-      <div class="bloco-cta">
-        <a href="#oferta" class="btn btn--largo">Quero montar o meu casamento possível</a>
-        <p class="btn-nota">Acesso imediato depois da compra. 7 dias de garantia. Cancele dentro do prazo se não fizer sentido para você.</p>
-      </div>
-    </div>
-
-    <div class="hero-arte">
-      <div class="foto r-4-5 hero-foto">
-        <img src="assets/fotos/casamento/hero.jpg" alt="Noiva no dia do casamento, ao fim da tarde">
-      </div>
-
-      <div class="app hero-chat">
-        <div class="app-tela">
-          <div class="app-topo">
-            <div class="app-avatar">CP</div>
-            <div>
-              <div class="app-nome">Sua assessora</div>
-              <div class="app-status">respondendo agora</div>
-            </div>
-          </div>
-          <div class="app-corpo">
-            <div class="bolha bolha--noiva">Tenho R$ 7 mil, quero 80 convidados e caso em 5 meses. Por onde eu começo?</div>
-            <div class="bolha bolha--agente">
-              Pelo que trava todo o resto: data, local e lista. Nessa ordem.
-              A sua lista de 80 pessoas é o que define o buffet, e o buffet costuma ser o
-              seu maior custo. Antes de fechar qualquer coisa, veja a diferença em reais:
-              <div class="cartao-app">
-                <div class="cartao-app-titulo">Divisão inicial sugerida</div>
-                <div class="linha-orc"><span>Local e estrutura</span><span>R$ 1.600</span></div>
-                <div class="linha-orc"><span>Comida e bebida</span><span>R$ 2.450</span></div>
-                <div class="linha-orc"><span>Fotografia</span><span>R$ 1.200</span></div>
-                <div class="linha-orc"><span>Vestido, beleza e traje</span><span>R$ 900</span></div>
-                <div class="linha-orc"><span>Decoração e flores</span><span>R$ 550</span></div>
-                <div class="linha-orc"><span>Documentação e reserva</span><span>R$ 300</span></div>
-              </div>
-            </div>
-            <div class="bolha bolha--noiva">E se eu cortar para 60 convidados?</div>
-            <div class="bolha bolha--agente">
-              Sobram cerca de R$ 610 no buffet. Minha sugestão: leve para a fotografia,
-              porque é a única parte do dia que continua existindo depois. Quer que eu
-              refaça o plano com 60 pessoas?
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- ============================================================
-     2. IDENTIFICAÇÃO
-     ============================================================ -->
-<section class="secao secao--creme2">
+<!-- 1. HERO -->
+<section class="sec azul hero">
   <div class="wrap">
-    <div class="wrap-texto centro">
-      <p class="olho">Se você chegou até aqui, provavelmente é por um desses motivos</p>
-      <h2>Se alguma dessas frases já passou pela sua cabeça, essa página é sobre você</h2>
-    </div>
+    <h1>O casamento que você salvou no Pinterest cabe no orçamento que você tem</h1>
+    <img class="cor" src="images/corac-o-cora-png-fundo-transparente-0.png" alt="">
+    <p>Descubra como uma noiva realizou o <strong>casamento dos sonhos dela com R$ 6.697,70</strong> e <strong>150 convidados</strong>. Mesmo com <strong>pouco tempo</strong> e <strong>muitos convidados</strong>!</p>
+    <a class="btn" href="#oferta">QUERO DESCOBRIR COMO ELA FEZ</a>
+  </div>
+</section>
 
-    <div class="frases">
-      <div class="frase"><span>Quero olhar para tudo e sentir: era exatamente assim que eu imaginava.</span></div>
-      <div class="frase"><span>Tá... mas quanto isso vai custar?</span></div>
-      <div class="frase"><span>Quero economizar. Só não quero que ninguém perceba que eu economizei.</span></div>
-      <div class="frase"><span>E se eu economizar na coisa errada?</span></div>
-      <div class="frase"><span>E se eu gastar demais no começo e faltar dinheiro para o que realmente importa?</span></div>
-      <div class="frase"><span>Não quero ouvir "que bonitinho, e olha que eles gastaram tão pouco".</span></div>
+<!-- 2. AS PERGUNTAS -->
+<section class="sec">
+  <div class="wrap">
+    <figure class="print"><img src="images/Imagem-do-WhatsApp-de-2024-11-11-as-21.53.02_9546f368-_1_.webp" alt="Noiva conta que gastou 5.950 e foi tudo perfeito"></figure>
+    <div class="perg">
+      <p>Como ter a festa dos meus sonhos sem gastar rios de dinheiro?</p>
+      <p>O que não pode faltar num casamento?</p>
+      <p>Como organizar tudo sem assessoria?</p>
+      <p>Como preparar tudo em pouco tempo?</p>
     </div>
+    <p class="centro">As respostas dessas perguntas é o que vai te fazer economizar <strong>MUITO</strong>.</p>
+  </div>
+</section>
 
-    <div class="wrap-texto centro" style="margin-top:38px">
-      <p class="lead">
-        Repare em uma coisa: nenhuma dessas frases é sobre planilha.
-        Todas são sobre <strong>medo de errar uma escolha que não dá para refazer</strong>.
-        É exatamente aí que o app entra.
-      </p>
+<!-- 3. O QUE ELA QUER DE VERDADE -->
+<section class="sec cinza">
+  <div class="wrap">
+    <h2>Você não quer economizar</h2>
+    <p class="centro" style="margin-bottom:20px">Você quer o casamento dos seus sonhos. E quer descobrir como ele cabe no dinheiro que você tem.</p>
+    <div class="perg">
+      <p>Entrar naquele salão, olhar em volta e sentir <strong>"meu Deus, é o meu casamento"</strong>.</p>
+      <p>Que suas amigas ainda estejam falando desse dia daqui a dois anos.</p>
+      <p>Olhar as fotos daqui a dez anos e pensar: <strong>eu faria tudo igual</strong>.</p>
+      <p>"Quero que perguntem quanto custou, e não onde eu cortei."</p>
+      <p>"Quero que tenha a cara do meu casamento, e não a cara do meu orçamento."</p>
+    </div>
+    <p>Isso não é vaidade. É humano. Você quer <strong>sonhar sem culpa, escolher sem medo e gastar sem arrependimento.</strong></p>
+    <h3 style="color:var(--vinho);margin-top:22px">O orçamento pode ser pequeno. A sensação não precisa ser.</h3>
+    <div class="duplo" style="margin-top:20px">
+      <figure class="print"><img src="images/52c577e8-55ca-4fe0-9b9e-92ef529fe3ab-_1_.webp" alt="Noiva conta que vai fechar tudo com R$ 2.470"></figure>
+      <figure class="print"><img src="images/a4f0494e-b9fd-481c-8478-2c21e60968de-_1_.webp" alt="Noiva conta que já economizou 4 mil reais"></figure>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     3. PROVA SOCIAL PRECOCE
-     ============================================================ -->
-<section class="secao">
+<!-- 4. A VIRADA -->
+<section class="sec escura">
   <div class="wrap">
-    <div class="wrap-texto centro">
-      <p class="olho">Quem já usou</p>
-      <h2>"Eu não precisei organizar tudo sozinha"</h2>
-      <p class="lead">
-        Os prints abaixo são mensagens reais de noivas, publicadas com autorização.
-        Repare no que elas contam: não é só o quanto economizaram. É o alívio de ter alguém
-        para perguntar quando a decisão travou.
-      </p>
-    </div>
-
-    <!-- SUBSTITUA pelos seus prints reais em assets/fotos/prints/ -->
-    <div class="prints" style="margin-top:38px">
-      <div class="print-item">
-        <span class="tag">Economizei</span>
-        <div class="foto r-3-4"><img src="assets/fotos/prints/print-01.jpg" alt="Depoimento de noiva sobre economia no casamento"></div>
-      </div>
-      <div class="print-item">
-        <span class="tag">Consegui decidir</span>
-        <div class="foto r-3-4"><img src="assets/fotos/prints/print-02.jpg" alt="Depoimento de noiva sobre clareza para decidir"></div>
-      </div>
-      <div class="print-item">
-        <span class="tag">Ficou bonito</span>
-        <div class="foto r-3-4"><img src="assets/fotos/prints/print-03.jpg" alt="Depoimento de noiva sobre o resultado do casamento"></div>
-      </div>
-      <div class="print-item">
-        <span class="tag">Organizei em pouco tempo</span>
-        <div class="foto r-3-4"><img src="assets/fotos/prints/print-04.jpg" alt="Depoimento de noiva sobre organização em pouco tempo"></div>
-      </div>
-      <div class="print-item">
-        <span class="tag">Tive ajuda quando travei</span>
-        <div class="foto r-3-4"><img src="assets/fotos/prints/print-05.jpg" alt="Depoimento de noiva sobre suporte durante o planejamento"></div>
-      </div>
-      <div class="print-item">
-        <span class="tag">Não me arrependi</span>
-        <div class="foto r-3-4"><img src="assets/fotos/prints/print-06.jpg" alt="Depoimento de noiva depois do casamento"></div>
-      </div>
-    </div>
+    <h2>Se você economizar em tudo, o seu casamento fica barato</h2>
+    <h3 style="margin-bottom:18px">Se você souber ONDE economizar, ele continua parecendo caro.</h3>
+    <p class="centro" style="margin-bottom:0">É por isso que existe casamento de R$ 40 mil com cara de barato, e casamento de R$ 7 mil com cara de caro. A conta é a mesma. A ordem das escolhas é que muda.</p>
   </div>
 </section>
 
-<!-- ============================================================
-     4. A GRANDE TESE: A PASTA DO PINTEREST
-     ============================================================ -->
-<section class="secao secao--escura">
+<!-- 5. A HISTORIA (com loop aberto) -->
+<section class="sec">
   <div class="wrap">
-    <div class="wrap-texto centro" style="margin-bottom:44px">
-      <p class="olho" style="color:#9E9188">A tese por trás de tudo</p>
-      <h2>Seu casamento dos sonhos já existe. Ele está salvo na sua pasta do Pinterest.</h2>
-    </div>
-
-    <div class="mosaico" style="margin-bottom:46px">
-      <div class="foto r-1-1"><img src="assets/fotos/pinterest/ref-01.jpg" alt="Referência de mesa posta salva no Pinterest"></div>
-      <div class="foto r-1-1"><img src="assets/fotos/pinterest/ref-02.jpg" alt="Referência de buquê"></div>
-      <div class="foto r-1-1"><img src="assets/fotos/pinterest/ref-03.jpg" alt="Referência de vestido"></div>
-      <div class="foto r-1-1"><img src="assets/fotos/pinterest/ref-04.jpg" alt="Referência de iluminação de festa"></div>
-      <div class="foto r-1-1"><img src="assets/fotos/pinterest/ref-05.jpg" alt="Referência de papelaria e convite"></div>
-    </div>
-
-    <div class="wrap-texto">
-      <p class="lead">
-        Você não abriu o Pinterest procurando economia. Você abriu procurando a mesa posta,
-        a luz do fim da tarde, o vestido, o buquê, a foto que você quer emoldurar na sala.
-      </p>
-      <p class="lead">
-        A sua pasta não é o problema. <strong>A sua pasta é o sonho.</strong>
-      </p>
-      <p class="lead">
-        O problema aparece uma tela depois, quando você tenta transformar aquilo em
-        realidade e a pergunta chega sozinha: <em>"tá, mas quanto isso vai custar?"</em>
-      </p>
-      <p class="lead">
-        É aí que nasce a tensão que nenhuma planilha resolve. Sonho grande, dinheiro
-        limitado e medo de escolher errado, tudo ao mesmo tempo. Você abre a planilha,
-        digita três números, fecha a planilha. E continua exatamente no mesmo lugar.
-      </p>
-
-      <div class="divisor" style="margin:38px auto"><i></i></div>
-
-      <p class="citacao" style="margin-bottom:34px">
-        O que falta entre a sua pasta e o altar não é dinheiro.<br>É tradução.
-      </p>
-
-      <p class="lead">
-        Cada print que você salvou tem uma versão cara e uma versão possível.
-        A diferença entre as duas quase nunca é o seu gosto. É informação:
-        qual flor daquele arranjo custa quatro vezes mais que as outras, qual tecido
-        cai igual na foto e custa um terço, qual detalhe da mesa ninguém repara e
-        qual detalhe todo mundo fotografa.
-      </p>
-      <p class="lead">
-        Quem trabalha com casamento sabe disso. Você não tem por que saber.
-        <strong>O app existe para fazer essa tradução com você, print por print, decisão
-        por decisão, dentro do dinheiro que você já tem.</strong>
-      </p>
-    </div>
-
-    <div class="bloco-cta centro">
-      <a href="#oferta" class="btn">Quero traduzir a minha pasta em um plano</a>
-    </div>
+    <h2>Opa! Muito Prazer!</h2>
+    <figure class="print"><img src="images/pexels-transtudios-photography-video-3684519-1-1.jpg" alt="Aline no dia do casamento dela"></figure>
+    <p>Eu sou a Aline. Em 2022 eu tinha o meu casamento inteiro montado na cabeça: a entrada, a luz, o vestido, a música. E não tinha dinheiro para nada daquilo.</p>
+    <p>Pedi orçamento para um buffet. <strong>Um só.</strong> E naquele dia eu chorei, porque um item já era quase tudo que eu tinha.</p>
+    <p>Foi ali que eu descobri uma coisa que mudou o casamento inteiro, e que eu vou te contar exatamente agora.</p>
+    <p><strong>Casei com 150 convidados gastando R$ 6.697,70.</strong> Sem cortar o vestido, sem cortar a foto e sem cortar convidado. E ninguém que estava lá percebeu quanto aquilo custou.</p>
   </div>
 </section>
 
-<!-- ============================================================
-     5. OS R$ 7 MIL, COM HONESTIDADE
-     ============================================================ -->
-<section class="secao">
+<!-- 6. COMO CABE (o payoff) -->
+<section class="sec cinza">
   <div class="wrap">
-    <div class="grid-2">
-      <div>
-        <p class="olho">A pergunta que todo mundo faz</p>
-        <h2>Dá para fazer um casamento bonito por menos de R$ 7 mil?</h2>
-        <p class="lead">
-          Na maioria dos cenários, sim. Mas não existe orçamento universal, e quem promete
-          um número igual para todo mundo está vendendo fórmula, não planejamento.
-        </p>
-        <p>
-          A Aline se casou em 2022, chamou 150 convidados e gastou <strong>R$ 6.697,70</strong>.
-          Esse número é real, é auditável linha a linha e é o ponto de partida deste método.
-          Ele não é uma promessa que se repete igual na sua cidade.
-        </p>
-        <p><strong>O seu número vai depender de quatro coisas:</strong></p>
-        <ul class="lista">
-          <li>A cidade onde você vai casar, porque o mesmo buffet muda de preço a cem quilômetros de distância.</li>
-          <li>A data, porque sábado de outubro e quinta de fevereiro não custam a mesma coisa.</li>
-          <li>O tamanho da lista, que é a variável que mais mexe no total.</li>
-          <li>O que é inegociável para vocês dois, que é a única parte que ninguém pode decidir por você.</li>
-        </ul>
-        <p>
-          O papel do app não é te entregar um valor mágico. É te mostrar essas variáveis,
-          calcular o efeito de cada escolha em reais e apontar onde o seu dinheiro rende mais.
-        </p>
-        <div class="aviso">
-          <strong>Transparência:</strong> os custos variam conforme região, número de convidados,
-          data e escolhas do casal. O app ajuda no planejamento e não garante um valor final
-          específico. R$ 6.697,70 é um caso real, não um resultado prometido.
-        </div>
-      </div>
+    <h2>Como um casamento cabe em R$ 45 por convidado</h2>
+    <p>R$ 6.697,70 divididos por 150 pessoas dá R$ 45 por convidado. Você acabou de pensar que é impossível, e é mesmo: <strong>do jeito que te vendem casamento.</strong></p>
+    <p>Porque três coisas comem quase todo o orçamento antes de você chegar na decoração, que é justamente o que aparece nas fotos.</p>
 
-      <div>
-        <div class="grid-2" style="gap:12px">
-          <div class="foto r-3-4"><img src="assets/fotos/casamento/aline-01.jpg" alt="Casamento da Aline, cerimônia"></div>
-          <div class="foto r-3-4"><img src="assets/fotos/casamento/aline-02.jpg" alt="Casamento da Aline, mesa posta"></div>
-          <div class="foto r-3-4"><img src="assets/fotos/casamento/aline-03.jpg" alt="Casamento da Aline, decoração"></div>
-          <div class="foto r-3-4"><img src="assets/fotos/casamento/aline-04.jpg" alt="Casamento da Aline, festa"></div>
-        </div>
-        <p class="legenda-foto">
-          Casamento real, 150 convidados, R$ 6.697,70 no total. Nenhuma dessas fotos foi
-          escolhida por ser barata. Foram escolhidas por serem bonitas.
-        </p>
-      </div>
+    <h3 style="margin-top:22px;color:var(--vinho)">O espaço</h3>
+    <p>Maior gasto da festa e o mais fácil de resolver de graça: quintal, sítio da família, salão de igreja, área de festa do prédio. Ninguém olha uma foto e pensa "que salão barato".</p>
+
+    <h3 style="color:var(--vinho)">A comida</h3>
+    <p>Buffet cobra por pessoa e explode em festa grande. Ninguém vai saber quanto custou o prato. Todo mundo vai lembrar se acabou.</p>
+
+    <h3 style="color:var(--vinho)">A roupa</h3>
+    <p>Aluguel, seminovo ou costureira. Ninguém olha uma foto e sabe se o vestido foi comprado ou alugado.</p>
+
+    <h3 style="color:var(--vinho)">E as mãos que já estavam ali</h3>
+    <p>A tia do melhor bolo. A madrinha com mão para arranjo. O amigo começando na fotografia. <strong>Não são economia: são o motivo pelo qual o casamento não parece barato, parece feito com amor.</strong></p>
+
+    <!-- PREENCHER COM A QUEBRA REAL DO CASAMENTO DA ALINE -->
+    <div class="conta">
+      <div class="cab">ONDE FORAM PARAR OS MEUS R$ 6.697,70</div>
+      <div class="lin"><span>Espaço</span><span class="pts"></span><span class="val">R$ ___</span></div>
+      <div class="lin"><span>Comida e bebida</span><span class="pts"></span><span class="val">R$ ___</span></div>
+      <div class="lin"><span>Vestido, terno e beleza</span><span class="pts"></span><span class="val">R$ ___</span></div>
+      <div class="lin"><span>Decoração</span><span class="pts"></span><span class="val">R$ ___</span></div>
+      <div class="lin"><span>Foto e vídeo</span><span class="pts"></span><span class="val">R$ ___</span></div>
+      <div class="lin total"><span><strong>Total</strong></span><span class="pts"></span><span class="val">R$ 6.697,70</span></div>
+      <p class="mini" style="margin-top:12px">Olhe onde eu coloquei mais e onde coloquei quase nada. É essa ordem que faz a diferença, não o valor.</p>
     </div>
+    <h3>Casamento caro é o que você compra. Casamento inesquecível é o que você monta.</h3>
   </div>
 </section>
 
-<!-- ============================================================
-     6. O MECANISMO NOVO
-     ============================================================ -->
-<section class="secao secao--creme2">
+<!-- 7. NAO FOI SORTE DE UMA -->
+<section class="sec">
   <div class="wrap">
-    <div class="wrap-texto centro">
-      <p class="olho">O que mudou</p>
-      <h2>Não é mais um ebook para você ler uma vez e deixar aberto no celular</h2>
-      <p class="lead">
-        É uma assessoria que acompanha o planejamento inteiro. Ela sabe o seu orçamento,
-        lembra do que você já decidiu, avisa o que está atrasado e responde quando você trava
-        no meio de uma escolha, às onze da noite, no dia em que o fornecedor mandou o preço.
-      </p>
+    <h2>R$ 2.470. R$ 5.950. E não foi sorte de uma só.</h2>
+    <div class="duplo">
+      <figure class="print"><img src="images/70312aff-a94e-46e4-9ca0-af4725cb4544-_1_-_1_.webp" alt="Noiva conta que vai ter lua de mel com o que economizou"></figure>
+      <figure class="print"><img src="images/b718eb78-256a-460c-a47c-53a251ae857f.jpg" alt="Noiva conta no dia seguinte que gastou 5.950"></figure>
     </div>
-
-    <div class="grid-3" style="margin-top:44px">
-      <div class="cartao">
-        <div class="cartao-num">1</div>
-        <h4>Conte a sua realidade</h4>
-        <p>
-          Quanto vocês têm, quando querem casar, quantas pessoas querem chamar, em qual
-          cidade, qual estilo e o que é inegociável. Leva alguns minutos e é a partir daí
-          que tudo o que o app fala passa a ser sobre o seu caso, não sobre casamento em geral.
-        </p>
-      </div>
-      <div class="cartao">
-        <div class="cartao-num">2</div>
-        <h4>Receba um plano possível</h4>
-        <p>
-          A divisão do seu orçamento por categoria, a ordem certa das contratações
-          (o que trava o quê) e um calendário até o grande dia. Você para de olhar para
-          uma folha em branco e passa a olhar para uma lista com nomes e prazos.
-        </p>
-      </div>
-      <div class="cartao">
-        <div class="cartao-num">3</div>
-        <h4>Pergunte sempre que travar</h4>
-        <p>
-          Preço que veio alto, convidado que ninguém sabe se entra, fornecedor que sumiu,
-          ideia que você viu e quer saber se cabe. Você pergunta com as suas palavras e a
-          resposta chega considerando o seu orçamento e as suas decisões anteriores.
-        </p>
-      </div>
-    </div>
-
-    <div class="wrap-texto centro" style="margin-top:56px">
-      <h3>Hoje você tem três caminhos. Só um deles cabe no orçamento e no seu tempo.</h3>
-    </div>
-
-    <div class="comparativo">
-      <div class="comp">
-        <div class="rotulo">Caminho 1</div>
-        <h4>Se virar sozinha na internet</h4>
-        <p>
-          Informação solta, preço sem contexto, dez abas abertas e nenhuma decisão tomada.
-          Você lê tudo sobre casamento e continua sem saber o que fazer no seu.
-        </p>
-      </div>
-      <div class="comp">
-        <div class="rotulo">Caminho 2</div>
-        <h4>Comprar mais um ebook</h4>
-        <p>
-          Conteúdo parado, escrito antes de você existir para ele. Ajuda a entender, mas
-          na hora de decidir entre dois orçamentos você continua sozinha com o print aberto.
-        </p>
-      </div>
-      <div class="comp comp--destaque">
-        <div class="rotulo">Caminho 3</div>
-        <h4>Ter a assessoria no bolso</h4>
-        <p>
-          Uma assessora particular pode custar mais do que o casamento inteiro que a gente
-          vai planejar aqui. O app entrega a mesma função central, orientar decisão,
-          por um valor que cabe no começo do planejamento e não no fim dele.
-        </p>
-      </div>
-    </div>
-
-    <p class="citacao" style="margin-top:48px;font-size:clamp(1.35rem,3.2vw,2rem)">
-      Você não precisa escolher entre se virar sozinha e pagar uma assessoria cara.
-    </p>
+    <p class="mini centro">Já acompanhei mais de 30 casamentos. Resultado varia conforme região, data, lista e fornecedores.</p>
   </div>
 </section>
 
-<!-- ============================================================
-     7. DEMONSTRAÇÃO DO APP
-     ============================================================ -->
-<section class="secao">
+<!-- 8. O APP -->
+<section class="sec cinza">
   <div class="wrap">
-    <div class="wrap-texto centro">
-      <p class="olho">Por dentro</p>
-      <h2>Quatro situações que travam quase toda noiva, e o que o app faz em cada uma</h2>
-      <p class="lead">
-        Estas são conversas do tipo que acontece dentro do app. Repare que nenhuma resposta
-        é uma dica genérica: todas usam o orçamento, a data e a lista que você já informou.
-      </p>
+    <img class="ic" src="images/1999145-_1_.webp" alt="" style="max-width:120px;margin:0 auto 14px">
+    <h2>E hoje tudo isso virou um aplicativo</h2>
+    <p>Material não responde pergunta às onze da noite. Então o método virou o <strong>Casamento Possível</strong>: você conversa com ele como conversaria com uma assessora.</p>
+    <p><strong>E ele responde sobre o SEU casamento.</strong> Não é conteúdo genérico nem lista pronta: você diz quanto tem, quantas pessoas vai convidar e onde mora, e ele monta o plano para o seu caso, a sua cidade e a sua data.</p>
+    <div class="perg" style="margin:20px 0">
+      <p>"Tenho R$ 18 mil e 90 convidados. Dá para fazer o quê?"</p>
+      <p>"O buffet me cobrou isso aqui. Está caro?"</p>
     </div>
-
-    <div class="grid-2" style="margin-top:46px;align-items:start;gap:22px">
-
-      <div>
-        <h4 style="margin-bottom:14px">"Tenho pouco dinheiro e prioridade demais"</h4>
-        <div class="app">
-          <div class="app-tela">
-            <div class="app-topo">
-              <div class="app-avatar">CP</div>
-              <div><div class="app-nome">Sua assessora</div><div class="app-status">online</div></div>
-            </div>
-            <div class="app-corpo">
-              <div class="bolha bolha--noiva">Eu quero foto boa, comida boa e decoração bonita. Mas não dá tudo. Como escolho?</div>
-              <div class="bolha bolha--agente">
-                Vamos separar por quanto tempo cada coisa dura.
-                <ul>
-                  <li><strong>Fica para sempre:</strong> fotografia e vídeo.</li>
-                  <li><strong>Dura a noite toda:</strong> comida, bebida e som.</li>
-                  <li><strong>Aparece nas fotos:</strong> decoração, flores e luz.</li>
-                </ul>
-                Comida e som decidem se a festa foi boa. Foto decide o que vocês vão lembrar.
-                Decoração aparece, mas rende muito mais por real investido do que as outras duas.
-                Sugiro proteger comida e foto, e resolver a decoração com volume e iluminação
-                em vez de flor cara. Quer que eu monte assim?
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h4 style="margin-bottom:14px">"Não sei quem convidar (e nem como cortar)"</h4>
-        <div class="app">
-          <div class="app-tela">
-            <div class="app-topo">
-              <div class="app-avatar">CP</div>
-              <div><div class="app-nome">Sua assessora</div><div class="app-status">online</div></div>
-            </div>
-            <div class="app-corpo">
-              <div class="bolha bolha--noiva">Minha lista chegou em 140 e o orçamento é para 90. Não sei quem tirar sem magoar ninguém.</div>
-              <div class="bolha bolha--agente">
-                Não corte por pessoa, corte por regra. Assim a decisão para de ser pessoal.
-                <ul>
-                  <li>Falou com você nos últimos 12 meses?</li>
-                  <li>Estaria em uma mesa de 8 no seu aniversário?</li>
-                  <li>Vocês dois conhecem ou é só um de vocês?</li>
-                </ul>
-                Aplique as três na lista inteira antes de olhar nome por nome.
-                <div class="cartao-app">
-                  <div class="cartao-app-titulo">O que cada corte devolve</div>
-                  <div class="linha-orc"><span>140 convidados</span><span>R$ 9.100</span></div>
-                  <div class="linha-orc"><span>110 convidados</span><span>R$ 7.150</span></div>
-                  <div class="linha-orc"><span>90 convidados</span><span>R$ 5.850</span></div>
-                </div>
-                Cada 10 pessoas a menos liberam cerca de R$ 650 para o resto do casamento.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h4 style="margin-bottom:14px">"O orçamento do fornecedor veio caro"</h4>
-        <div class="app">
-          <div class="app-tela">
-            <div class="app-topo">
-              <div class="app-avatar">CP</div>
-              <div><div class="app-nome">Sua assessora</div><div class="app-status">online</div></div>
-            </div>
-            <div class="app-corpo">
-              <div class="bolha bolha--noiva">O buffet mandou R$ 4.200 e eu tinha planejado R$ 2.450. Desisto desse fornecedor?</div>
-              <div class="bolha bolha--agente">
-                Ainda não. Primeiro descubra do que é feito esse valor. Mande exatamente isto:
-                <ul>
-                  <li>"Esse preço inclui garçom, louça e taxa de serviço?"</li>
-                  <li>"Qual é o valor por pessoa a partir de 80 convidados?"</li>
-                  <li>"Tem diferença de preço em outro dia da semana?"</li>
-                  <li>"Se eu levar a bebida, quanto sai o pacote só de comida?"</li>
-                </ul>
-                Bebida por conta do casal costuma ser o corte mais rápido em orçamento de buffet.
-                Me manda a resposta dele que eu comparo com os outros dois que você já recebeu.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h4 style="margin-bottom:14px">"Meu casamento é daqui a poucos meses"</h4>
-        <div class="app">
-          <div class="app-tela">
-            <div class="app-topo">
-              <div class="app-avatar">CP</div>
-              <div><div class="app-nome">Sua assessora</div><div class="app-status">online</div></div>
-            </div>
-            <div class="app-corpo">
-              <div class="bolha bolha--noiva">Faltam 4 meses e eu não fechei nada. Ainda dá tempo?</div>
-              <div class="bolha bolha--agente">
-                Dá, mas a ordem passa a importar mais do que o gosto. Esta semana, só isto:
-                <div class="cartao-app">
-                  <div class="cartao-app-titulo">Prioridade desta semana</div>
-                  <div class="linha-orc"><span>Reservar local e data</span><span>até sexta</span></div>
-                  <div class="linha-orc"><span>Pedir 3 orçamentos de buffet</span><span>até sexta</span></div>
-                  <div class="linha-orc"><span>Dar entrada no cartório</span><span>até dia 20</span></div>
-                  <div class="barra" style="margin-top:12px"><i style="width:22%"></i></div>
-                </div>
-                Local e cartório são os únicos itens com prazo que não dá para acelerar depois.
-                Decoração, papelaria e beleza podem esperar mais três semanas sem risco.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="bloco-cta centro">
-      <a href="#oferta" class="btn">Quero ter isso no meu celular</a>
-      <p class="btn-nota">Acesso imediato. 7 dias de garantia.</p>
-    </div>
+    <!-- TROCAR PELO PRINT REAL DE UMA CONVERSA DENTRO DO APP -->
+    <h3 style="margin-top:22px">O QUE VOCÊ VAI RESOLVER:</h3>
+    <ul class="check">
+      <li><strong>Lista de convidados:</strong> quantas pessoas o seu orçamento comporta e como montar a lista sem briga de família.</li>
+      <li><strong>O que não pode faltar:</strong> os itens essenciais de uma festa de casamento, e a ordem em que tudo acontece.</li>
+      <li><strong>Espaço sem aluguel:</strong> as alternativas perto de você e como deixar um lugar comum bonito no dia.</li>
+      <li><strong>Data estratégica:</strong> horário, mês e dia da semana mudam o preço da festa inteira.</li>
+      <li><strong>Segredos e quem pode ajudar:</strong> o que o mercado esconde de você, e o que cada pessoa em volta já sabe fazer.</li>
+    </ul>
+    <ul class="barra-lista" style="margin-top:16px">
+      <li>Sem precisar ser especialista em eventos.</li>
+      <li>Mesmo sem saber por onde começar.</li>
+      <li>Sem precisar ter um casamento feio!</li>
+    </ul>
   </div>
 </section>
 
-<!-- ============================================================
-     8. O QUE VOCÊ CONSEGUE RESOLVER
-     ============================================================ -->
-<section class="secao secao--creme2">
-  <div class="wrap">
-    <div class="grid-2">
-      <div class="foto r-4-5">
-        <img src="assets/fotos/casamento/noiva-celular.jpg" alt="Noiva organizando o casamento pelo celular">
-      </div>
-      <div>
-        <p class="olho">Não é o que você vai aprender</p>
-        <h2>É o que você vai conseguir resolver</h2>
-        <ul class="lista" style="margin-top:22px">
-          <li><strong>Saber quanto custa o seu casamento antes de gastar o primeiro real.</strong>
-              Uma divisão inicial do orçamento por categoria, feita com o seu número e a sua lista.</li>
-          <li><strong>Parar de decidir tudo ao mesmo tempo.</strong>
-              As tarefas vêm em ordem de urgência, com o que precisa ser fechado primeiro
-              porque trava o resto.</li>
-          <li><strong>Escolher entre dois orçamentos sem chutar.</strong>
-              Você manda os dois, o app aponta o que está incluso, o que está faltando e o
-              que perguntar antes de assinar.</li>
-          <li><strong>Fazer a lista de convidados sem brigar.</strong>
-              Critérios objetivos para cortar sem que a conversa vire mágoa de família.</li>
-          <li><strong>Achar a versão possível de cada referência que você salvou.</strong>
-              Você descreve o que viu, o app mostra caminhos mais baratos que chegam perto
-              do mesmo resultado na foto.</li>
-          <li><strong>Não perder prazo de documento.</strong>
-              Cartório, papelada e datas críticas entram no calendário com antecedência.</li>
-          <li><strong>Ter para quem perguntar às onze da noite.</strong>
-              Quando aparecer um imprevisto, você não vai depender de um grupo de WhatsApp
-              com cinco opiniões diferentes.</li>
-        </ul>
-      </div>
-    </div>
+<!-- 9. NOIVA INTELIGENTE -->
+<section class="sec escura">
+  <div class="wrap centro">
+    <h2>A noiva inteligente não é a que gasta menos</h2>
+    <h3 style="margin-bottom:16px">É a que sabe onde gastar.</h3>
+    <p class="centro" style="margin-bottom:0">Você não precisa do maior orçamento da sua roda de amigas. <strong>O seu casamento não precisa de mais dinheiro. Precisa de escolhas melhores.</strong></p>
   </div>
 </section>
 
-<!-- ============================================================
-     9. O MÉTODO
-     ============================================================ -->
-<section class="secao">
+<!-- 10. BONUS -->
+<section class="sec">
   <div class="wrap">
-    <div class="wrap-texto centro">
-      <p class="olho">O sistema por trás das respostas</p>
-      <h2>O Método Casamento Possível</h2>
-      <p class="lead">
-        Você não está comprando dicas. Está comprando um jeito de decidir, aplicado
-        cinco vezes, do primeiro dia até a véspera. É esse método que o app roda com você.
-      </p>
-    </div>
+    <p class="centro"><span class="amarelo">Levando o Plano Completo:</span></p>
+    <h2 style="margin-top:16px">Você ganha 5 bônus extras</h2>
+    <img src="images/kit-completo.png" alt="Materiais do plano completo" style="width:100%;max-width:260px;margin:0 auto 16px">
 
-    <div class="etapas">
-      <div class="etapa">
-        <div class="etapa-num">01</div>
-        <div>
-          <h4>Diagnóstico</h4>
-          <p>Quanto vocês têm de verdade, quanto entra por mês até a data, quantas pessoas
-             na lista e o que não pode faltar de jeito nenhum.</p>
-          <span class="etapa-pergunta">"Com o que eu tenho, que casamento cabe?"</span>
-        </div>
+    <div class="bonus">
+      <div class="topo">Bônus #1 &nbsp;|&nbsp; Checklist e Planner</div>
+      <div class="corpo">
+        <p class="medo">"Tenho medo de esquecer alguma coisa e descobrir tarde demais."</p>
+        <img class="ic" src="images/1710091687-_1_-1024x933.webp" alt="Planner do casamento num tablet" style="max-width:135px">
+        <p>Tudo que precisa ser feito, em ordem, do pedido até o grande dia. Com espaço para anotações, convidados e playlist.</p>
+        <p class="quanto">Quanto iria custar: R$97</p>
       </div>
-      <div class="etapa">
-        <div class="etapa-num">02</div>
-        <div>
-          <h4>Prioridade</h4>
-          <p>A ordem das contratações, definida pelo que trava o resto e pelo que some
-             mais rápido da agenda dos fornecedores.</p>
-          <span class="etapa-pergunta">"O que eu preciso fechar primeiro?"</span>
-        </div>
-      </div>
-      <div class="etapa">
-        <div class="etapa-num">03</div>
-        <div>
-          <h4>Alternativas</h4>
-          <p>Para cada item caro, pelo menos duas rotas mais baratas que chegam perto do
-             mesmo resultado visual. É aqui que a sua pasta do Pinterest vira preço.</p>
-          <span class="etapa-pergunta">"Como eu chego nesse resultado gastando menos?"</span>
-        </div>
-      </div>
-      <div class="etapa">
-        <div class="etapa-num">04</div>
-        <div>
-          <h4>Execução</h4>
-          <p>Uma lista curta por semana, com prazo. Não o casamento inteiro de uma vez,
-             só o que precisa acontecer nos próximos sete dias.</p>
-          <span class="etapa-pergunta">"O que eu faço esta semana?"</span>
-        </div>
-      </div>
-      <div class="etapa">
-        <div class="etapa-num">05</div>
-        <div>
-          <h4>Revisão</h4>
-          <p>O gasto real comparado com o planejado, e o ajuste antes de o buraco aparecer.
-             Estourar orçamento quase nunca é um gasto grande, são doze pequenos.</p>
-          <span class="etapa-pergunta">"Ainda está sob controle?"</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     10. ORGULHO: ECONOMIZAR SEM PARECER
-     ============================================================ -->
-<section class="secao secao--creme2">
-  <div class="wrap">
-    <div class="wrap-texto centro">
-      <p class="olho">A parte que ninguém fala em voz alta</p>
-      <h2>Economizar e parecer que economizou são duas coisas diferentes</h2>
-      <p class="lead">
-        Existe uma distância enorme entre um casamento barato e um casamento bem decidido.
-        Os dois custam a mesma coisa. Só um deles parece caro.
-      </p>
-    </div>
-
-    <div class="wrap-texto" style="margin-top:34px">
-      <p>
-        Você provavelmente já sentiu vergonha de admitir isso para alguém.
-        Não precisa. Não é vaidade e não é ostentação. É uma coisa muito mais simples:
-        <strong>você quer que as pessoas percebam o cuidado, não o orçamento.</strong>
-      </p>
-      <p>
-        E o que separa um casamento de R$ 20 mil que parece de R$ 20 mil de um casamento de
-        R$ 20 mil que parece de R$ 40 mil não é sorte, não é bom gosto e não é fornecedor
-        caro. É <strong>onde o dinheiro foi colocado</strong>.
-      </p>
-      <p>
-        Quase ninguém repara na marca do espumante depois da terceira hora.
-        Todo mundo repara em uma mesa mal iluminada. Ninguém conta quantas flores tinha
-        no arranjo. Todo mundo lembra se a comida acabou.
-      </p>
-      <p class="lead" style="color:var(--terra);font-weight:500">
-        Esse é o tipo de decisão que o app abre com você, item por item.
-      </p>
-    </div>
-
-    <div class="colunas-corte">
-      <div class="corte corte--nao">
-        <div class="corte-titulo">Quase nunca vale cortar</div>
-        <ul>
-          <li>Comida, na quantidade. Faltar comida é a única coisa que a festa inteira comenta.</li>
-          <li>Fotografia. É o único item que continua existindo no dia seguinte.</li>
-          <li>Som e iluminação. Definem se a festa levanta ou morre às dez da noite.</li>
-          <li>Cadeira e mesa suficientes para todo mundo sentar.</li>
-        </ul>
-      </div>
-      <div class="corte corte--sim">
-        <div class="corte-titulo">Quase sempre dá para economizar</div>
-        <ul>
-          <li>Número de convidados, que é a alavanca que mexe em todo o resto.</li>
-          <li>Dia e mês da cerimônia, com diferença real de preço na mesma cidade.</li>
-          <li>Bebida por conta do casal, em vez de pacote fechado do buffet.</li>
-          <li>Convite digital no lugar do impresso, com papel só para os padrinhos.</li>
-          <li>Bolo cenográfico com bolo de corte na cozinha.</li>
-        </ul>
-      </div>
-      <div class="corte corte--invisivel">
-        <div class="corte-titulo">Ninguém percebe</div>
-        <ul>
-          <li>Marca da bebida servida depois da terceira hora.</li>
-          <li>Flor nobre trocada por flor de época mais folhagem no mesmo volume.</li>
-          <li>Lembrancinha, que metade dos convidados esquece na mesa.</li>
-          <li>Tecido do vestido, desde que o caimento e o ajuste estejam certos.</li>
-          <li>Doces finos vendidos por peso em vez de por unidade decorada.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="aviso">
-      Os exemplos acima são do tipo de decisão que o app trabalha com você, não uma regra
-      fixa. O que vale cortar muda conforme o estilo do casamento, a cidade e o que é
-      importante para vocês dois.
-    </div>
-
-    <p class="citacao" style="margin-top:46px">
-      "O segredo não é cortar tudo.<br>É saber o que não pode ser cortado."
-    </p>
-  </div>
-</section>
-
-<!-- ============================================================
-     11. SER LEMBRADA E NÃO SE ARREPENDER
-     ============================================================ -->
-<section class="secao secao--escura">
-  <div class="wrap">
-    <div class="grid-2">
-      <div>
-        <p class="olho" style="color:#9E9188">O que fica depois</p>
-        <h2>Daqui a dez anos, você vai olhar essas fotos.</h2>
-        <p class="lead">
-          O casamento acaba em uma noite. A conversa sobre ele não.
-        </p>
-        <p class="lead">
-          Tem casamento que as amigas comentam por anos. Não é sempre o mais caro.
-          É quase sempre o que tinha a cara dos noivos: a música que só eles entenderiam,
-          a mesa que parecia jantar de casa, a foto que ninguém posou.
-        </p>
-        <p class="lead">
-          E existe o outro lado, que ninguém coloca na legenda do Instagram.
-          É a noiva que olha uma foto três anos depois e lembra da escolha feita com pressa.
-          Do fornecedor fechado porque acabou o prazo. Do detalhe que ela abriu mão em
-          março e que continua incomodando.
-        </p>
-        <p class="lead">
-          <strong>O que mais dói não é ter gastado pouco. É ter decidido no escuro.</strong>
-        </p>
-        <p class="lead">
-          Você não quer um casamento com a cara do seu orçamento.
-          Você quer um casamento com a cara de vocês. As duas coisas cabem no mesmo dinheiro,
-          desde que alguém te mostre onde colocar cada parte dele.
-        </p>
-      </div>
-
-      <div>
-        <div class="grid-2" style="gap:12px">
-          <div class="foto r-3-4"><img src="assets/fotos/casamento/memoria-01.jpg" alt="Noivos dançando na festa"></div>
-          <div class="foto r-3-4"><img src="assets/fotos/casamento/memoria-02.jpg" alt="Convidados emocionados na cerimônia"></div>
-        </div>
-        <div class="foto r-16-9" style="margin-top:12px"><img src="assets/fotos/casamento/memoria-03.jpg" alt="Brinde no fim da festa"></div>
-
-        <div class="frases" style="margin-top:22px;grid-template-columns:1fr">
-          <div class="frase" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.13);color:#F3EBE2">
-            <span>Estava tão a cara de vocês.</span>
-          </div>
-          <div class="frase" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.13);color:#F3EBE2">
-            <span>Eu nunca vou esquecer esse casamento.</span>
-          </div>
-        </div>
-        <p class="mini" style="margin-top:10px">
-          Frases que noivas dizem querer ouvir, coletadas na pesquisa que deu origem a este produto.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     12. DEPOIMENTOS EM FORMATO DE CASO
-     ============================================================ -->
-<section class="secao">
-  <div class="wrap">
-    <div class="wrap-texto centro">
-      <p class="olho">Casos reais</p>
-      <h2>Contexto, problema e o que mudou</h2>
-      <p class="lead">
-        Print sozinho emociona e some. Caso com contexto fica.
-        Abaixo, o que essas noivas tinham quando começaram e o que resolveram no caminho.
-      </p>
-    </div>
-
-    <!-- PREENCHA com depoimentos reais e autorizados. Não invente nada aqui. -->
-    <div class="grid-3" style="margin-top:40px;align-items:start">
-      <div class="caso">
-        <div class="caso-contexto">
-          <span class="pilula">[cidade]</span>
-          <span class="pilula">[nº de convidados]</span>
-          <span class="pilula">[orçamento]</span>
-        </div>
-        <p class="caso-texto">"[Depoimento real da cliente, mantido com as palavras dela.]"</p>
-        <div class="foto r-4-3" style="margin-bottom:14px"><img src="assets/fotos/prints/caso-01.jpg" alt="Print do depoimento"></div>
-        <p class="caso-assina">[Nome autorizado], [cidade]</p>
-      </div>
-      <div class="caso">
-        <div class="caso-contexto">
-          <span class="pilula">[cidade]</span>
-          <span class="pilula">[nº de convidados]</span>
-          <span class="pilula">[prazo]</span>
-        </div>
-        <p class="caso-texto">"[Depoimento real da cliente, mantido com as palavras dela.]"</p>
-        <div class="foto r-4-3" style="margin-bottom:14px"><img src="assets/fotos/prints/caso-02.jpg" alt="Print do depoimento"></div>
-        <p class="caso-assina">[Nome autorizado], [cidade]</p>
-      </div>
-      <div class="caso">
-        <div class="caso-contexto">
-          <span class="pilula">[cidade]</span>
-          <span class="pilula">[nº de convidados]</span>
-          <span class="pilula">[maior ganho]</span>
-        </div>
-        <p class="caso-texto">"[Depoimento real da cliente, mantido com as palavras dela.]"</p>
-        <div class="foto r-4-3" style="margin-bottom:14px"><img src="assets/fotos/prints/caso-03.jpg" alt="Print do depoimento"></div>
-        <p class="caso-assina">[Nome autorizado], [cidade]</p>
-      </div>
-    </div>
-
-    <div class="mosaico" style="margin-top:40px">
-      <div class="foto r-1-1"><img src="assets/fotos/casamento/real-01.jpg" alt="Casamento de cliente"></div>
-      <div class="foto r-1-1"><img src="assets/fotos/casamento/real-02.jpg" alt="Casamento de cliente"></div>
-      <div class="foto r-1-1"><img src="assets/fotos/casamento/real-03.jpg" alt="Casamento de cliente"></div>
-      <div class="foto r-1-1"><img src="assets/fotos/casamento/real-04.jpg" alt="Casamento de cliente"></div>
-      <div class="foto r-1-1"><img src="assets/fotos/casamento/real-05.jpg" alt="Casamento de cliente"></div>
-    </div>
-    <p class="legenda-foto centro">Casamentos reais organizados com o método. Fotos publicadas com autorização dos casais.</p>
-  </div>
-</section>
-
-<!-- ============================================================
-     13. A CRIADORA
-     ============================================================ -->
-<section class="secao secao--creme2">
-  <div class="wrap">
-    <div class="grid-2">
-      <div class="foto r-4-5"><img src="assets/fotos/casamento/aline-retrato.jpg" alt="Aline, criadora do método"></div>
-      <div>
-        <p class="olho">Quem está do outro lado</p>
-        <h2>Eu não criei isso para falar de casamento de forma bonita</h2>
-        <p class="lead">
-          Eu me casei em 2022. Chamei 150 pessoas e gastei R$ 6.697,70.
-          Não porque eu sou econômica por natureza, mas porque era o que dava.
-        </p>
-        <p>
-          Passei meses fazendo o que você provavelmente está fazendo agora:
-          abrindo o Pinterest, salvando referência, pedindo orçamento e levando susto.
-          A cada susto eu aprendia uma coisa que ninguém tinha me contado, e anotava.
-        </p>
-        <p>
-          Quando o casamento acabou, eu tinha um caderno inteiro de decisões: onde eu quase
-          gastei errado, onde eu economizei e ninguém percebeu, o que eu faria diferente.
-          Comecei a ajudar outras noivas com esse caderno, uma a uma, no privado.
-        </p>
-        <p>
-          O problema é que uma pessoa não dá conta de acompanhar dezenas de casamentos ao
-          mesmo tempo, e casamento não avisa a hora que trava. A dúvida chega no domingo à
-          noite, na fila do cartório, no meio de uma conversa com a mãe do noivo.
-        </p>
-        <p>
-          <strong>O app nasceu para isso: transformar essa experiência em uma assessoria
-          que está disponível na hora em que você precisa, e não só na hora em que eu posso
-          responder.</strong>
-        </p>
-        <p class="mini">
-          Aline, criadora do Método Casamento Possível. Casou em 2022 com 150 convidados
-          por R$ 6.697,70 e já ajudou mais de 30 noivas a organizarem o casamento delas.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     14. BÔNUS
-     ============================================================ -->
-<section class="secao">
-  <div class="wrap">
-    <div class="wrap-texto centro">
-      <p class="olho">Já vem dentro</p>
-      <h2>Cinco ferramentas que economizam as decisões chatas</h2>
-      <p class="lead">
-        Não são PDFs soltos para você baixar e esquecer. São recursos dentro do app,
-        conectados ao seu orçamento e ao seu calendário.
-      </p>
     </div>
 
     <div class="bonus">
-      <div class="bonus-item">
-        <div class="rotulo">Incluso 01</div>
-        <h4>Seu painel de próximos passos</h4>
-        <p>Checklist e planner que se atualizam sozinhos conforme você fecha os itens.
-           Você abre o app e vê o que precisa acontecer esta semana, não o casamento inteiro.</p>
+      <div class="topo">Bônus #2 &nbsp;|&nbsp; Paleta de cores em minutos</div>
+      <div class="corpo">
+        <p class="medo">"Tenho medo de ficar com cara de casamento barato."</p>
+        <img class="ic" src="images/3214398-1.png" alt="">
+        <p>Que cor para as madrinhas e para as mães? Coerência de cor é o que separa simples de improvisado, e não custa nada.</p>
+        <p class="quanto">Quanto iria custar: R$79</p>
       </div>
-      <div class="bonus-item">
-        <div class="rotulo">Incluso 02</div>
-        <h4>Guia para não perder prazo no cartório</h4>
-        <p>Documentos, prazos e a ordem certa do casamento civil. É a parte que ninguém
-           acha bonita e que trava tudo quando é lembrada tarde.</p>
+    </div>
+
+    <div class="bonus">
+      <div class="topo">Bônus #3 &nbsp;|&nbsp; A data perfeita para você</div>
+      <div class="corpo">
+        <p class="medo">"E se eu escolher uma data que encarece tudo?"</p>
+        <img class="ic" src="images/6663321-1.png" alt="">
+        <p>Com base nas flores de cada época, na concorrência de cada mês e no clima da sua região.</p>
+        <p class="quanto">Quanto iria custar: R$59</p>
       </div>
-      <div class="bonus-item">
-        <div class="rotulo">Incluso 03</div>
-        <h4>Escolha guiada da data</h4>
-        <p>Os critérios que mudam o preço do seu casamento antes de qualquer negociação:
-           dia da semana, mês, feriado, alta temporada de fornecedor.</p>
+    </div>
+
+    <div class="bonus">
+      <div class="topo">Bônus #4 &nbsp;|&nbsp; Tudo sobre casamento civil</div>
+      <div class="corpo">
+        <p class="medo">"Não quero errar na burocracia e descobrir no cartório."</p>
+        <img class="ic" src="images/2332998-1.png" alt="">
+        <p>Regime de bens, documentos, antecedência e até como se casar DE GRAÇA no civil! <u>Tudo de bom né?!</u></p>
+        <p class="quanto">Quanto iria custar: R$67</p>
       </div>
-      <div class="bonus-item">
-        <div class="rotulo">Incluso 04</div>
-        <h4>Paleta e identidade visual</h4>
-        <p>Uma decisão guiada de cores que faz decoração, papelaria, traje e flores
-           conversarem entre si. É o que separa "bonito" de "combinado".</p>
-      </div>
-      <div class="bonus-item">
-        <div class="rotulo">Incluso 05</div>
-        <h4>Lista inteligente da casa nova</h4>
-        <p>O enxoval organizado por prioridade real de uso, para o chá de casa nova pedir
-           o que vocês vão usar e não o que enche armário.</p>
+    </div>
+
+    <div class="bonus">
+      <div class="topo">Bônus #5 &nbsp;|&nbsp; O Enxoval de Casa Nova</div>
+      <div class="corpo">
+        <p class="medo">"Vou começar uma vida nova e não sei o que comprar."</p>
+        <img class="ic" src="images/casa-ou-apartamento-qual-a-melhor-opcao-para-casal-scaled-1-1536x1024-_1_-1024x683.webp" alt="Casal na casa nova" style="max-width:190px">
+        <p>A lista completa do enxoval de casa nova, para não esquecer de nada.</p>
+        <p class="quanto">Quanto iria custar: R$27</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     15. OFERTA
-     ============================================================ -->
-<section class="secao secao--creme2" id="oferta">
+<!-- 11. OFERTA -->
+<section class="sec vinho" id="oferta">
   <div class="wrap">
-    <div class="wrap-texto centro">
-      <p class="olho">A oferta</p>
-      <h2>Sua assessoria de casamento, disponível desde hoje</h2>
+    <h2>ESCOLHA A MELHOR OFERTA PARA VOCÊ:</h2>
+    <div class="preco" style="margin:0 0 20px">
+      <p class="por" style="color:#fff">UMA ASSESSORA DE CASAMENTO COBRA</p>
+      <p class="de" style="color:#FFB3B3">R$ 3.000 a R$ 30.000</p>
     </div>
 
-    <div class="oferta" style="margin-top:38px">
-      <div class="oferta-topo">
-        <h3>Casamento Possível</h3>
-        <p>Acesso ao app, à assessora e a todo o método</p>
-      </div>
-      <div class="oferta-corpo">
-        <ul class="stack">
-          <li><span><strong>Acesso ao app e à assessora</strong><br>
-              <span style="color:var(--tinta-2);font-size:.9rem">Pergunte quantas vezes precisar, durante todo o planejamento</span></span>
-              <span class="valor">incluso</span></li>
-          <li><span><strong>Plano inicial com o seu orçamento</strong><br>
-              <span style="color:var(--tinta-2);font-size:.9rem">Divisão por categoria feita com o seu número, a sua data e a sua lista</span></span>
-              <span class="valor">incluso</span></li>
-          <li><span><strong>Ordem de contratação e calendário</strong><br>
-              <span style="color:var(--tinta-2);font-size:.9rem">O que fechar primeiro e o que pode esperar sem risco</span></span>
-              <span class="valor">incluso</span></li>
-          <li><span><strong>Painel de próximos passos</strong><br>
-              <span style="color:var(--tinta-2);font-size:.9rem">Checklist e planner que se atualizam conforme você avança</span></span>
-              <span class="valor">incluso</span></li>
-          <li><span><strong>Os cinco guias de apoio</strong><br>
-              <span style="color:var(--tinta-2);font-size:.9rem">Cartório, data, paleta, enxoval e convidados</span></span>
-              <span class="valor">incluso</span></li>
-          <li><span><strong>Alternativas criativas para cada item caro</strong><br>
-              <span style="color:var(--tinta-2);font-size:.9rem">A tradução das suas referências em versões que cabem no bolso</span></span>
-              <span class="valor">incluso</span></li>
-          <li><span><strong>Atualizações do app enquanto seu acesso estiver ativo</strong></span>
-              <span class="valor">incluso</span></li>
-          <li><span><strong>Garantia de 7 dias</strong></span>
-              <span class="valor">incluso</span></li>
-        </ul>
-
-        <div class="preco">
-          <p class="preco-obs" style="margin-bottom:2px">Acesso completo por</p>
-          <!-- ==== EDITE O PREÇO E A CONDIÇÃO AQUI ==== -->
-          <div class="preco-por">R$ 47<small>&nbsp;à vista</small></div>
-          <p class="preco-obs">
-            ou 12x de R$ 4,79 no cartão.<br>
-            <strong>Pagamento único.</strong> Não é assinatura e não renova sozinho.
-          </p>
-          <!-- ========================================= -->
-        </div>
-
-        <div class="bloco-cta centro">
-          <!-- ==== TROQUE PELO SEU LINK DE CHECKOUT ==== -->
-          <a href="#" class="btn btn--largo" data-checkout>Quero começar meu planejamento agora</a>
-          <p class="btn-nota">
-            Compra segura. Acesso liberado logo após a confirmação do pagamento.<br>
-            7 dias para testar. Se não fizer sentido, você pede o reembolso dentro do prazo.
-          </p>
-        </div>
-      </div>
+    <div class="plano">
+      <span class="pill">PLANO ESSENCIAL</span>
+      <ul class="check">
+        <li>A assessora no aplicativo, <strong>sem limite de perguntas</strong></li>
+        <li>Seu orçamento montado e dividido por item</li>
+        <li>Onde economizar e onde vale investir</li>
+        <li>Alternativas criativas para cada item caro</li>
+        <li>Acesso até a data do seu casamento</li>
+      </ul>
+      <p class="valor">R$ 67</p>
+      <p class="parc">à vista</p>
+      <a class="btn" href="LINK_CHECKOUT_ESSENCIAL">QUERO ESSA OPÇÃO!</a>
     </div>
 
-    <div class="wrap-texto centro" style="margin-top:34px">
-      <p class="lead">
-        Para efeito de comparação: uma assessoria particular pode custar mais do que o
-        casamento inteiro que a gente vai planejar aqui. Não é a mesma coisa e não faz o
-        mesmo trabalho. Mas a parte de que você mais precisa agora, alguém que te ajude a
-        decidir, está aqui dentro.
-      </p>
+    <div class="plano">
+      <span class="pill rosa">PLANO COMPLETO</span>
+      <p class="maisvendido">(O MAIS ESCOLHIDO)</p>
+      <img src="images/New-Project-3-2-1.png" alt="Tudo que vem no plano completo" style="width:100%;max-width:230px;margin:0 auto 12px">
+      <ul class="check">
+        <li><strong>Tudo do Plano Essencial</strong></li>
+        <li><strong>Esse orçamento está caro?</strong> A faixa real por porte de festa</li>
+        <li><strong>O que não pode faltar</strong> na sua festa</li>
+        <li><strong>Por onde começar:</strong> a ordem certa de contratação</li>
+        <li>Acesso do noivo na mesma conta</li>
+        <li>Os 5 bônus da noiva</li>
+      </ul>
+      <p class="valor">R$ 97</p>
+      <p class="parc">ou 5x de R$ 21,70</p>
+      <a class="btn" href="LINK_CHECKOUT_COMPLETO">SIM! QUERO O PLANO COMPLETO!</a>
     </div>
+    <p class="centro mini" style="margin-top:14px">Pagamento único, sem pegadinhas e 7 dias de garantia.</p>
   </div>
 </section>
 
-<!-- ============================================================
-     16. GARANTIA
-     ============================================================ -->
-<section class="secao">
-  <div class="wrap-texto">
-    <div class="garantia">
-      <div class="selo-garantia">
-        <b>7</b>
-        <span>dias de garantia</span>
-      </div>
-      <div>
-        <h3 style="margin-bottom:10px">Entre, teste com o seu casamento de verdade e decida depois</h3>
-        <p>
-          Abra o app, informe o seu orçamento real, faça as perguntas que estão te travando
-          hoje e veja se a orientação faz sentido para o seu momento.
-        </p>
-        <p style="margin-bottom:0">
-          Se você concluir que não é para você, peça o reembolso dentro dos 7 dias, pelas
-          condições informadas na compra, e devolvemos o valor. Você testa o produto inteiro,
-          não uma demonstração.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     17. FAQ
-     ============================================================ -->
-<section class="secao secao--creme2">
+<!-- 12. FAQ -->
+<section class="sec cinza">
   <div class="wrap">
-    <div class="wrap-texto centro">
-      <p class="olho">Antes de decidir</p>
-      <h2>As perguntas que a gente mais recebe</h2>
-    </div>
+    <p class="faq-q">Meu casamento vai custar R$ 7 mil também?</p>
+    <p>Depende de três coisas: se tem espaço para usar sem alugar, se tem gente na família disposta a ajudar e quantas pessoas você vai convidar. Quem não tem nenhuma das três gasta mais e continua economizando muito, porque <strong>a ordem das decisões é a mesma em qualquer orçamento.</strong></p>
 
-    <div class="faq">
-      <details open>
-        <summary>O app substitui uma assessora presencial?</summary>
-        <div class="resposta">
-          <p>Não, e a gente não vai fingir que sim. Uma assessora presencial visita local,
-             negocia com fornecedor no seu nome e fica ao seu lado no dia do casamento.
-             O app não faz nada disso.</p>
-          <p>O que ele faz é a parte que você mais usa e que custa mais caro para contratar:
-             orientar decisão, organizar a ordem das coisas, calcular o efeito de cada escolha
-             no seu orçamento e responder quando você trava.</p>
-        </div>
-      </details>
+    <p class="faq-q">Legal... mas se é tão bom, por que não custa como uma assessoria?</p>
+    <p>Uma assessora atende uma noiva por vez e cobra por hora. O aplicativo atende todas ao mesmo tempo. É o que acontece com o preço quando um serviço vira produto. <u>Sem pegadinhas nem letras miúdas.</u></p>
 
-      <details>
-        <summary>O resultado de R$ 7 mil é garantido?</summary>
-        <div class="resposta">
-          <p>Não. R$ 6.697,70 é um caso real (150 convidados, 2022) e serve como referência
-             de planejamento, não como promessa.</p>
-          <p>O seu número depende de cidade, data, número de convidados e das suas
-             prioridades. O que o app garante é que você vai enxergar essas variáveis
-             antes de gastar, e não depois.</p>
-        </div>
-      </details>
+    <p class="faq-q">O pagamento é único? E se eu não gostar?</p>
+    <img class="selo" src="images/selo-de-qualidade-garantida-1.png" alt="Selo de garantia">
+    <p>Sim! O pagamento é único (<strong>NÃO é mensal</strong>). E se você não gostar, tem reembolso em até 7 dias. Ou seja, <strong>você não corre nenhum risco</strong>.</p>
 
-      <details>
-        <summary>O pagamento é único ou vira assinatura?</summary>
-        <div class="resposta">
-          <!-- CONFIRME esta resposta com as condições reais do seu checkout -->
-          <p>Pagamento único. Você paga uma vez e não há renovação automática.
-             Se em algum momento isso mudar, a alteração vale só para novas compras.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Quando eu recebo o acesso?</summary>
-        <div class="resposta">
-          <!-- CONFIRME o prazo real de liberação -->
-          <p>Logo após a confirmação do pagamento. Cartão costuma aprovar na hora e Pix
-             também. Boleto pode levar até dois dias úteis para compensar, o que é prazo do
-             banco e não nosso.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Preciso entender de tecnologia?</summary>
-        <div class="resposta">
-          <p>Se você usa WhatsApp, você usa o app. Você escreve a sua dúvida com as suas
-             palavras, do jeito que falaria com uma amiga, e a resposta chega em português
-             claro. Não tem planilha para montar nem fórmula para aprender.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Funciona para a minha cidade?</summary>
-        <div class="resposta">
-          <p>O método funciona em qualquer lugar: prioridade, ordem de contratação, critérios
-             de corte e negociação valem para o Brasil inteiro.</p>
-          <p>Preço, esse é regional. Por isso o app trabalha com faixas e com o que você
-             mesma recebe de orçamento dos fornecedores da sua cidade, em vez de fingir que
-             sabe quanto custa um buffet a mil quilômetros daqui.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Ele monta um orçamento exato, com preço de fornecedor?</summary>
-        <div class="resposta">
-          <p>Não. Ele monta uma estimativa de planejamento, que é o que te permite decidir
-             antes de sair pedindo orçamento. Preço real só o fornecedor da sua região dá.</p>
-          <p>Quando você receber esses orçamentos, aí sim: mande para o app e ele compara,
-             aponta o que está faltando no escopo e te diz o que perguntar antes de assinar.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Tem limite de perguntas?</summary>
-        <div class="resposta">
-          <!-- CONFIRME e ajuste conforme o limite real do seu produto -->
-          <p>[Descreva aqui o limite real de uso, se existir. Se não houver limite, diga isso
-             de forma direta. Não use "ilimitado" se houver qualquer restrição técnica.]</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>E se eu já contratei metade das coisas?</summary>
-        <div class="resposta">
-          <p>Melhor ainda, porque metade das variáveis já está fechada. Você informa o que
-             já contratou e por quanto, e o app trabalha com o dinheiro que sobrou,
-             recalculando onde ele rende mais daqui para frente.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Posso cancelar?</summary>
-        <div class="resposta">
-          <p>Sim, dentro dos 7 dias de garantia, pelo canal informado no e-mail da compra.
-             Basta pedir dentro do prazo, sem precisar justificar.</p>
-        </div>
-      </details>
-    </div>
+    <p class="faq-q">Em quanto tempo eu recebo o acesso?</p>
+    <img class="ic" src="images/pngtree-cartoon-email-icon-with-mailbox-concept-correspondence-email-splash-vector-png-image_12825745-1-300x300.png" alt="" style="max-width:100px;margin:0 auto 10px">
+    <p>Logo após a aprovação do pagamento, <strong>você recebe no seu e-mail</strong> de compra os dados de acesso.</p>
   </div>
 </section>
 
-<!-- ============================================================
-     18. CTA FINAL
-     ============================================================ -->
-<section class="secao secao--escura">
+<!-- 13. FECHAMENTO -->
+<section class="sec azul" style="text-align:center">
   <div class="wrap">
-    <div class="grid-2">
-      <div>
-        <p class="olho" style="color:#9E9188">Última coisa</p>
-        <h2>Você não precisa descobrir tudo sozinha</h2>
-        <p class="lead">
-          Comece com o que você já tem: o dinheiro que existe, as pessoas que você quer por
-          perto e o tempo que falta até a data. Essas três informações já bastam para o
-          app te devolver um plano na primeira conversa.
-        </p>
-        <p class="lead">
-          A sua pasta do Pinterest não precisa ser cortada. Ela precisa ser traduzida.
-        </p>
-        <div class="bloco-cta">
-          <a href="#oferta" class="btn btn--largo">Quero o meu casamento possível</a>
-          <p class="btn-nota">
-            Acesso imediato. Pagamento único. 7 dias de garantia.
-          </p>
-        </div>
-        <p class="lead" style="margin-top:32px;font-size:1rem">
-          <strong>P.S.</strong> Se você fechar esta página e continuar sozinha, o casamento
-          vai acontecer do mesmo jeito. A diferença vai aparecer daqui a alguns meses,
-          quando você olhar as fotos e souber exatamente qual escolha foi feita com calma e
-          qual foi feita porque o prazo acabou. Essa segunda lista é a que dá para encurtar
-          hoje.
-        </p>
-      </div>
-      <div>
-        <div class="foto r-4-5"><img src="assets/fotos/casamento/final.jpg" alt="Noivos ao fim do casamento"></div>
-      </div>
-    </div>
+    <img class="cor" src="images/corac-o-cora-png-fundo-transparente-0.png" alt="" style="width:48px;margin:0 auto 12px">
+    <h2 style="color:#fff;text-shadow:0 2px 6px rgba(10,60,100,.38)">Tenha o casamento dos seus sonhos</h2>
+    <p style="color:#0D3550;font-weight:600">Aquele que faz as pessoas comentarem sobre ele para sempre. Sem precisar gastar uma fortuna para isso.</p>
+    <a class="btn" href="#oferta">QUERO O MEU CASAMENTO DOS SONHOS</a>
   </div>
 </section>
 
 <footer class="rodape">
   <div class="wrap">
-    <div class="marca">Casamento Possível</div>
-    <p>
-      Os custos de um casamento variam conforme região, número de convidados, data e escolhas
-      do casal. O app auxilia no planejamento e na tomada de decisão e não garante um valor
-      final específico, não realiza contratações, não substitui assessoria presencial e não
-      presta serviço jurídico ou contábil.
-    </p>
-    <p>
-      Depoimentos e imagens publicados com autorização. Resultados individuais variam.
-    </p>
-    <p style="margin-top:18px">
-      <a href="#">Termos de uso</a> &nbsp;·&nbsp;
-      <a href="#">Política de privacidade</a> &nbsp;·&nbsp;
-      <a href="#">Suporte</a>
-    </p>
-    <p class="mini" style="margin-top:14px">© <span id="ano">2026</span> Casamento Possível. Todos os direitos reservados.</p>
+    <p>Suporte: <a href="mailto:casamentoeconomico2000@gmail.com">casamentoeconomico2000@gmail.com</a></p>
+    <p class="mini">Este produto não garante valor final de casamento nem resultado financeiro. As faixas e sugestões são referências de mercado e variam conforme região, data, número de convidados e fornecedores escolhidos.</p>
   </div>
 </footer>
 
-<div class="barra-fixa" id="barraFixa">
-  <div class="txt"><strong>Casamento Possível</strong><br>Pagamento único. 7 dias de garantia.</div>
-  <a href="#oferta" class="btn">Quero meu casamento possível</a>
+<div class="fixa" id="fixa">
+  <div class="wrap" style="padding:0 4px"><a class="btn" href="#oferta" style="margin:0 auto">QUERO DESCOBRIR COMO ELA FEZ</a></div>
 </div>
 
-<script src="assets/js/pagina.js"></script>
+<script>
+(function(){
+  var fixa=document.getElementById('fixa'), oferta=document.getElementById('oferta');
+  window.addEventListener('scroll',function(){
+    var r=oferta.getBoundingClientRect();
+    var na=r.top<window.innerHeight&&r.bottom>0;
+    fixa.classList.toggle('on', window.scrollY>window.innerHeight*0.9 && !na);
+  },{passive:true});
+  /* Imagem que ainda nao foi enviada vira um placeholder com o nome do arquivo,
+     em vez de icone quebrado. Assim que o arquivo entrar em images/, a foto aparece. */
+  function semFoto(img){
+    if(!img.parentNode) return;
+    var d=document.createElement('div');
+    d.className='semfoto';
+    d.textContent='Falta a imagem: '+(img.getAttribute('src')||'').replace('images/','');
+    img.parentNode.replaceChild(d,img);
+  }
+  document.querySelectorAll('img').forEach(function(img){
+    img.addEventListener('error',function(){semFoto(img);});
+    if(img.complete&&img.naturalWidth===0) semFoto(img);
+  });
+
+  document.querySelectorAll('a.btn').forEach(function(a){
+    a.addEventListener('click',function(){
+      var h=a.getAttribute('href')||'';
+      if(h.indexOf('#')!==0&&typeof fbq==='function'){fbq('track','InitiateCheckout');}
+    });
+  });
+})();
+</script>
 </body>
 </html>
