@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Seu casamento dos sonhos cabe no orçamento que você tem</title>
-<meta name="description" content="Descubra como uma noiva realizou o casamento dos sonhos com R$ 6.697,70 e 150 convidados, sem abrir mão do vestido, da decoração nem das fotos.">
-<meta property="og:title" content="Seu casamento dos sonhos cabe no orçamento que você tem">
-<meta property="og:description" content="R$ 6.697,70, 150 convidados, sem abrir mão de nada.">
+<title>Casamento com cara de caro, com o dinheiro que você tem de verdade</title>
+<meta name="description" content="A média no Brasil é R$ 414 por convidado. A Aline casou com 150 convidados por R$ 6.697,70, ou R$ 45 por pessoa. A diferença não foi cortar mais. Foi a ordem das decisões.">
+<meta property="og:title" content="Casamento com cara de caro, com o dinheiro que você tem de verdade">
+<meta property="og:description" content="Média nacional: R$ 414 por convidado. O casamento da Aline: R$ 45. E ninguém que estava lá percebeu onde ela economizou.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,13 +56,27 @@ u{text-decoration:underline}
 
 /* hero */
 .hero{padding:34px 0 30px;text-align:center}
-.hero h1{color:#fff;text-shadow:0 2px 6px rgba(10,60,100,.38);margin-bottom:18px}
+.hero h1{color:#fff;text-shadow:0 2px 6px rgba(10,60,100,.38);margin-bottom:16px}
 .hero .cor{width:64px;margin:0 auto 16px}
 .hero p{color:#0D3550;font-size:16.5px;font-weight:600}
+.kicker{display:inline-block;background:rgba(255,255,255,.92);color:#0D3550;font-weight:700;font-size:13px;letter-spacing:.03em;padding:7px 15px;border-radius:20px;margin:0 0 16px;text-transform:uppercase;line-height:1.3}
 
 /* perguntas em italico */
 .perg{margin:26px 0}
 .perg p{font-size:18px;font-weight:700;font-style:italic;text-align:center;color:var(--texto);line-height:1.28;margin-bottom:11px}
+
+/* falas reais de forum */
+.fala{background:#F5F5F5;border-left:4px solid var(--vinho);border-radius:0 4px 4px 0;padding:12px 14px;margin:0 0 10px;font-size:15.5px;line-height:1.45;font-style:italic;color:#3A3A3A}
+.sec.cinza .fala{background:#F4F4F4}
+.fonte{display:block;font-size:12.5px;color:#7E7E7E;font-style:normal;line-height:1.45;margin-top:12px}
+.sec.escura .fonte,.sec.vinho .fonte{color:#B9AAAE}
+
+/* numeros de mercado */
+.dados{display:grid;gap:10px;margin:22px 0}
+.dado{background:#fff;border:2px solid var(--vinho);border-radius:5px;padding:14px 12px;text-align:center}
+.dado .n{font-family:"Poppins",sans-serif;font-size:32px;font-weight:800;color:var(--vinho);line-height:1;margin:0 0 6px}
+.dado p{font-size:14.5px;line-height:1.4;margin:0;color:#444}
+@media (min-width:520px){.dados{grid-template-columns:1fr 1fr}}
 
 /* preco */
 .preco{text-align:center;margin:24px 0 8px}
@@ -102,6 +116,11 @@ u{text-decoration:underline}
 /* destaque amarelo */
 .amarelo{display:inline-block;background:#FFF06A;padding:6px 16px;border-radius:3px;font-weight:600;font-size:19px;color:var(--texto)}
 
+/* caixa neutra */
+.caixa{border:2px solid #C7C7C7;border-radius:5px;padding:16px;margin:20px 0;background:#FAFAFA}
+.caixa h3{text-align:left;font-size:18.5px;margin-bottom:10px;color:var(--vinho)}
+.caixa p:last-child{margin-bottom:0}
+
 /* caixa de bonus */
 .bonus{border:2px solid var(--vinho);border-radius:5px;overflow:hidden;margin:0 0 14px;background:#fff}
 .bonus .topo{background:var(--vinho);color:#fff;padding:9px 12px;text-align:center;font-size:clamp(19px,4.8vw,24px);font-weight:700;line-height:1.25}
@@ -129,13 +148,28 @@ u{text-decoration:underline}
 
 /* conta aberta */
 .conta{border:2px solid var(--vinho);border-radius:5px;padding:14px;margin:18px 0;background:#fff}
-.conta .cab{background:var(--vinho);color:#fff;margin:-18px -18px 14px;padding:10px 14px;text-align:center;font-weight:700;font-size:16px}
+.conta .cab{background:var(--vinho);color:#fff;margin:-14px -14px 14px;padding:10px 14px;text-align:center;font-weight:700;font-size:16px}
 .lin{display:flex;align-items:baseline;gap:8px;padding:6px 0;font-size:15.5px;border-bottom:1px dotted #CFCFCF}
 .lin:last-of-type{border-bottom:none}
 .lin .pts{flex:1 1 auto;min-width:10px}
 .lin .val{flex:0 0 auto;font-weight:800;white-space:nowrap}
 .lin.total{border-bottom:none;border-top:2px solid var(--vinho);margin-top:8px;padding-top:12px}
 .lin.total .val{color:var(--verdepreco);font-family:"Poppins",sans-serif;font-size:24px}
+
+/* soma do valor */
+.soma{background:#fff;border-radius:5px;padding:14px;margin:0 0 14px;color:var(--texto)}
+.soma .cab{font-weight:700;text-align:center;font-size:15.5px;margin-bottom:10px;color:var(--vinho)}
+.soma .lin{font-size:15px}
+.soma .lin.total .val{font-size:22px;color:var(--vinho)}
+
+/* tres opcoes */
+.opcao{border:1px solid #D2D2D2;border-radius:5px;padding:14px;margin:0 0 10px;background:#fff}
+.opcao b{display:block;margin-bottom:5px;font-size:16.5px}
+.opcao p{font-size:15px;margin:0;color:#4A4A4A;line-height:1.45}
+.opcao.destaque{border:2px solid var(--verde);background:#F5FFF6}
+
+/* ps */
+.ps{border-top:2px solid #C9C9C9;margin-top:24px;padding-top:16px;font-size:15.5px;line-height:1.5}
 
 .rodape{background:var(--escuro);color:#B5B5B5;padding:30px 0;text-align:center;font-size:14px;line-height:1.55}
 .rodape a{color:#E4E4E4}
@@ -157,24 +191,27 @@ u{text-decoration:underline}
 <!-- 1. HERO -->
 <section class="sec azul hero">
   <div class="wrap">
-    <h1>O casamento que você salvou no Pinterest cabe no orçamento que você tem</h1>
+    <span class="kicker">Para quem já pediu o primeiro orçamento e travou</span>
+    <h1>Casamento com cara de caro, com o dinheiro que você tem de verdade</h1>
     <img class="cor" src="images/corac-o-cora-png-fundo-transparente-0.png" alt="">
-    <p>Descubra como uma noiva realizou o <strong>casamento dos sonhos dela com R$ 6.697,70</strong> e <strong>150 convidados</strong>. Mesmo com <strong>pouco tempo</strong> e <strong>muitos convidados</strong>!</p>
+    <p>A média no Brasil é <strong>R$ 414 por convidado</strong>. A Aline casou com <strong>150 convidados</strong> gastando <strong>R$ 6.697,70</strong>, que dá R$ 45 por pessoa. E ninguém que estava lá percebeu onde ela economizou.</p>
     <a class="btn" href="#oferta">QUERO DESCOBRIR COMO ELA FEZ</a>
   </div>
 </section>
 
-<!-- 2. AS PERGUNTAS -->
+<!-- 2. A CONVERSA QUE JA ESTA NA CABECA DELA -->
 <section class="sec">
   <div class="wrap">
+    <h2>Se alguma dessas frases parece sua, você está no lugar certo</h2>
+    <div class="fala">"COMO ESTÁ CARO PRA CASAR!!! Enfim, queremos gastar uns 10.000,00 tbm.. ou melhor, só podemos gastar isso rsrs"</div>
+    <div class="fala">"Por aqui, o orçamento inicial era de 35.000 e já estamos em quase 60.000. Gente é tudo muito caro, mesmo tentando economizar ao máximo."</div>
+    <div class="fala">"Depois que tu entra neste mundo de noiva, tudo que tu vê é lindo e caro."</div>
+    <div class="fala">"Vou me casar e agora, por onde começar???"</div>
+    <div class="fala">"Talvez eu esteja precisando de uma diretriz sei lah..."</div>
+    <span class="fonte">Falas públicas de noivas em fóruns brasileiros de casamento. Não são depoimentos deste produto.</span>
+    <p style="margin-top:18px">Você já percebeu que ninguém responde essas perguntas de graça. Respondem com "depende", com orçamento por e-mail e com "me chama no direct".</p>
+    <p><strong>As respostas dessas perguntas é o que faz o casamento caber no seu orçamento.</strong> E elas existem.</p>
     <figure class="print"><img src="images/Imagem-do-WhatsApp-de-2024-11-11-as-21.53.02_9546f368-_1_.webp" alt="Noiva conta que gastou 5.950 e foi tudo perfeito"></figure>
-    <div class="perg">
-      <p>Como ter a festa dos meus sonhos sem gastar rios de dinheiro?</p>
-      <p>O que não pode faltar num casamento?</p>
-      <p>Como organizar tudo sem assessoria?</p>
-      <p>Como preparar tudo em pouco tempo?</p>
-    </div>
-    <p class="centro">As respostas dessas perguntas é o que vai te fazer economizar <strong>MUITO</strong>.</p>
   </div>
 </section>
 
@@ -199,47 +236,87 @@ u{text-decoration:underline}
   </div>
 </section>
 
-<!-- 4. A VIRADA -->
-<section class="sec escura">
+<!-- 4. NAO E VOCE (o verdadeiro problema) -->
+<section class="sec">
   <div class="wrap">
-    <h2>Se você economizar em tudo, o seu casamento fica barato</h2>
-    <h3 style="margin-bottom:18px">Se você souber ONDE economizar, ele continua parecendo caro.</h3>
-    <p class="centro" style="margin-bottom:0">É por isso que existe casamento de R$ 40 mil com cara de barato, e casamento de R$ 7 mil com cara de caro. A conta é a mesma. A ordem das escolhas é que muda.</p>
+    <h2>Você não é ruim com dinheiro. A conta é armada para estourar.</h2>
+    <p>Antes de você se culpar por ter feito a primeira planilha e desanimar, olhe o que acontece com quem tem muito mais dinheiro que você:</p>
+    <div class="dados">
+      <div class="dado"><p class="n">R$ 50.073</p><p>foi o custo médio de um casamento no Brasil em 2025</p></div>
+      <div class="dado"><p class="n">R$ 414</p><p>é o gasto médio por convidado nesse levantamento</p></div>
+      <div class="dado"><p class="n">65%</p><p>dos casais gastaram mais do que tinham planejado</p></div>
+      <div class="dado"><p class="n">72,4%</p><p>dos que planejavam gastar até R$ 40 mil ultrapassaram esse valor</p></div>
+    </div>
+    <span class="fonte">Informe Nacional da Indústria de Casamento 2025 (Casamentos.com.br / The Knot Worldwide, mais de 7.000 casais) e pesquisa Serasa + Casar.com + Opinion Box. Faixas de referência de mercado, não previsão do seu caso.</span>
+    <p style="margin-top:18px">Repare bem: <strong>não são noivas desorganizadas. São dois em cada três.</strong></p>
+    <p>Quando dois em cada três erram a mesma conta, o problema deixa de ser a pessoa e passa a ser a conta. Ninguém estoura o orçamento porque é relaxada. Estoura porque começou a decidir na ordem errada, e quando percebeu já tinha assinado.</p>
+    <p><strong>E tem uma razão muito específica para esse mercado funcionar assim.</strong></p>
   </div>
 </section>
 
-<!-- 5. A HISTORIA (com loop aberto) -->
+<!-- 5. O CULPADO -->
+<section class="sec escura">
+  <div class="wrap">
+    <h2>O preço muda quando você diz a palavra "casamento"</h2>
+    <p>Essa é a dica que circula entre as noivas que já passaram por isso, e que nenhum fornecedor vai te contar:</p>
+    <div class="fala" style="background:#333;border-left-color:#FFB3B3;color:#EDEDED">"Quando for orçar as coisas, não diga que é pra casamento!!! Diga que é para um evento particular. Sempre vão cobrar 2x ou mais quando é pra casamento."</div>
+    <div class="fala" style="background:#333;border-left-color:#FFB3B3;color:#EDEDED">"A indústria do casamento é impressionante!! Os fornecedores percebem nossa empolgação e jogam os preços lá em cima. Na hora de fechar tem que mostrar desinteresse pra poder barganhar."</div>
+    <span class="fonte">Falas públicas de noivas em fóruns brasileiros de casamento.</span>
+    <p style="margin-top:18px">Não é maldade individual, é como o mercado foi montado. Uma noiva compra uma vez na vida, está emocionada, tem prazo e não sabe o preço justo de nada. É o cliente mais fácil que existe.</p>
+    <p>Por isso o dinheiro some antes de você chegar na parte que aparece nas fotos. Some em <strong>taxa de rolha, hora extra, prato do fornecedor, deslocamento, item que estava fora da locação</strong> e no combo que você foi obrigada a comprar junto.</p>
+    <p style="margin-bottom:0"><strong>Você não está competindo com o preço. Está competindo com a informação que só o outro lado tem.</strong></p>
+  </div>
+</section>
+
+<!-- 6. A VIRADA (mecanismo) -->
+<section class="sec cinza">
+  <div class="wrap">
+    <h2>Se você economizar em tudo, o seu casamento fica barato</h2>
+    <h3 style="margin-bottom:18px;color:var(--vinho)">Se você souber ONDE economizar, ele continua parecendo caro.</h3>
+    <p class="centro">É por isso que existe casamento de R$ 40 mil com cara de barato, e casamento de R$ 7 mil com cara de caro.</p>
+    <p class="centro" style="margin-bottom:0"><strong>A conta é a mesma. A ordem das escolhas é que muda.</strong></p>
+    <div class="caixa">
+      <h3>Por que a ordem importa tanto</h3>
+      <p>O primeiro item que você fecha define o preço de todos os outros. Fechou o espaço antes de saber quantas pessoas cabem no seu bolso, o buffet vira refém do espaço. Fechou o buffet antes da lista, a lista vira refém do buffet.</p>
+      <p>É por isso que cortar item não resolve: quando você chega no corte, as decisões caras já foram tomadas. <strong>Não dá para economizar no fim de uma conta que começou errada.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. A HISTORIA -->
 <section class="sec">
   <div class="wrap">
     <h2>Opa! Muito Prazer!</h2>
     <figure class="print"><img src="images/pexels-transtudios-photography-video-3684519-1-1.jpg" alt="Aline no dia do casamento dela"></figure>
     <p>Eu sou a Aline. Em 2022 eu tinha o meu casamento inteiro montado na cabeça: a entrada, a luz, o vestido, a música. E não tinha dinheiro para nada daquilo.</p>
     <p>Pedi orçamento para um buffet. <strong>Um só.</strong> E naquele dia eu chorei, porque um item já era quase tudo que eu tinha.</p>
-    <p>Foi ali que eu descobri uma coisa que mudou o casamento inteiro, e que eu vou te contar exatamente agora.</p>
+    <p>Passei os três meses seguintes fazendo uma coisa que ninguém me mandou fazer: em vez de pedir preço, eu passei a perguntar <em>como é que se forma esse preço</em>. Liguei para fornecedor sem dizer que era casamento. Comparei o mesmo salgado cobrado por buffet e cobrado por salgadeira. Descobri o que muda quando a festa é sábado à noite e quando é domingo à tarde.</p>
+    <p>Foi aí que eu vi a coisa que mudou o casamento inteiro: <strong>eu não estava sem dinheiro. Eu estava decidindo na ordem errada.</strong></p>
     <p><strong>Casei com 150 convidados gastando R$ 6.697,70.</strong> Sem cortar o vestido, sem cortar a foto e sem cortar convidado. E ninguém que estava lá percebeu quanto aquilo custou.</p>
   </div>
 </section>
 
-<!-- 6. COMO CABE (o payoff) -->
+<!-- 8. COMO CABE (o payoff) -->
 <section class="sec cinza">
   <div class="wrap">
     <h2>Como um casamento cabe em R$ 45 por convidado</h2>
-    <p>R$ 6.697,70 divididos por 150 pessoas dá R$ 45 por convidado. Você acabou de pensar que é impossível, e é mesmo: <strong>do jeito que te vendem casamento.</strong></p>
+    <p>R$ 6.697,70 divididos por 150 pessoas dá R$ 45 por convidado, contra os R$ 414 da média nacional. Você acabou de pensar que é impossível, e é mesmo: <strong>do jeito que te vendem casamento.</strong></p>
     <p>Porque três coisas comem quase todo o orçamento antes de você chegar na decoração, que é justamente o que aparece nas fotos.</p>
 
     <h3 style="margin-top:22px;color:var(--vinho)">O espaço</h3>
     <p>Maior gasto da festa e o mais fácil de resolver de graça: quintal, sítio da família, salão de igreja, área de festa do prédio. Ninguém olha uma foto e pensa "que salão barato".</p>
 
     <h3 style="color:var(--vinho)">A comida</h3>
-    <p>Buffet cobra por pessoa e explode em festa grande. Ninguém vai saber quanto custou o prato. Todo mundo vai lembrar se acabou.</p>
+    <p>Buffet cobra por pessoa, então erro aqui é erro multiplicado por 150. Ninguém vai saber quanto custou o prato. Todo mundo vai lembrar se acabou.</p>
 
     <h3 style="color:var(--vinho)">A roupa</h3>
     <p>Aluguel, seminovo ou costureira. Ninguém olha uma foto e sabe se o vestido foi comprado ou alugado.</p>
 
     <h3 style="color:var(--vinho)">E as mãos que já estavam ali</h3>
-    <p>A tia do melhor bolo. A madrinha com mão para arranjo. O amigo começando na fotografia. <strong>Não são economia: são o motivo pelo qual o casamento não parece barato, parece feito com amor.</strong></p>
+    <p>A tia do melhor bolo. A madrinha com mão para arranjo. A prima que faz papelaria. <strong>Não são economia: são o motivo pelo qual o casamento não parece barato, parece feito com amor.</strong></p>
+    <p class="mini">Com uma ressalva que vale dinheiro: foto é o único item onde amador sai caro. O que ficou do dia são as fotos, e não dá para refazer na segunda-feira. Se for contratar alguém em início de carreira, peça portfólio de uma festa do mesmo porte e no mesmo horário da sua.</p>
 
-    <!-- PREENCHER COM A QUEBRA REAL DO CASAMENTO DA ALINE -->
+    <!-- PREENCHER COM A QUEBRA REAL DO CASAMENTO DA ALINE. Nao estime: se nao tiver os valores, apague a caixa inteira. -->
     <div class="conta">
       <div class="cab">ONDE FORAM PARAR OS MEUS R$ 6.697,70</div>
       <div class="lin"><span>Espaço</span><span class="pts"></span><span class="val">R$ ___</span></div>
@@ -254,7 +331,7 @@ u{text-decoration:underline}
   </div>
 </section>
 
-<!-- 7. NAO FOI SORTE DE UMA -->
+<!-- 9. NAO FOI SORTE DE UMA -->
 <section class="sec">
   <div class="wrap">
     <h2>R$ 2.470. R$ 5.950. E não foi sorte de uma só.</h2>
@@ -266,24 +343,27 @@ u{text-decoration:underline}
   </div>
 </section>
 
-<!-- 8. O APP -->
+<!-- 10. O APP -->
 <section class="sec cinza">
   <div class="wrap">
     <img class="ic" src="images/1999145-_1_.webp" alt="" style="max-width:120px;margin:0 auto 14px">
     <h2>E hoje tudo isso virou um aplicativo</h2>
-    <p>Material não responde pergunta às onze da noite. Então o método virou <strong>NOME_DO_APP</strong>: você conversa com ele como conversaria com uma assessora.</p>
+    <p>Material não responde pergunta às onze da noite, que é justamente a hora em que você abre a planilha de novo. Então o método virou o <strong>Casamento Possível</strong>: você conversa com ele como conversaria com uma assessora.</p>
     <p><strong>E ele responde sobre o SEU casamento.</strong> Não é conteúdo genérico nem lista pronta: você diz quanto tem, quantas pessoas vai convidar e onde mora, e ele monta o plano para o seu caso, a sua cidade e a sua data.</p>
     <div class="perg" style="margin:20px 0">
       <p>"Tenho R$ 18 mil e 90 convidados. Dá para fazer o quê?"</p>
       <p>"O buffet me cobrou isso aqui. Está caro?"</p>
+      <p>"Minha mãe quer convidar mais 20 pessoas. Quanto isso custa?"</p>
     </div>
     <!-- TROCAR PELO PRINT REAL DE UMA CONVERSA DENTRO DO APP -->
     <h3 style="margin-top:22px">O QUE VOCÊ VAI RESOLVER:</h3>
     <ul class="check">
-      <li><strong>Lista de convidados:</strong> quantas pessoas o seu orçamento comporta e como montar a lista sem briga de família.</li>
-      <li><strong>O que não pode faltar:</strong> os itens essenciais de uma festa de casamento, e a ordem em que tudo acontece.</li>
+      <li><strong>Por onde começar:</strong> a ordem certa de contratação, para você não descobrir tarde demais que o primeiro contrato encareceu todos os outros.</li>
+      <li><strong>Se esse orçamento está caro:</strong> a faixa real por porte de festa, para você parar de aceitar preço sem saber se é preço.</li>
+      <li><strong>Lista de convidados:</strong> quantas pessoas o seu dinheiro comporta, e o custo de cada pessoa a mais quando a família começa a sugerir nome.</li>
       <li><strong>Espaço sem aluguel:</strong> as alternativas perto de você e como deixar um lugar comum bonito no dia.</li>
-      <li><strong>Data estratégica:</strong> horário, mês e dia da semana mudam o preço da festa inteira.</li>
+      <li><strong>Data estratégica:</strong> horário, mês e dia da semana mudam o preço da festa inteira, e essa é a decisão mais barata de tomar e a mais cara de mudar depois.</li>
+      <li><strong>O que não pode faltar:</strong> os itens essenciais de uma festa de casamento, e a ordem em que tudo acontece no dia.</li>
       <li><strong>Segredos e quem pode ajudar:</strong> o que o mercado esconde de você, e o que cada pessoa em volta já sabe fazer.</li>
     </ul>
     <ul class="barra-lista" style="margin-top:16px">
@@ -291,10 +371,26 @@ u{text-decoration:underline}
       <li>Mesmo sem saber por onde começar.</li>
       <li>Sem precisar ter um casamento feio!</li>
     </ul>
+    <div class="caixa" style="border-color:var(--vinho)">
+      <h3>E você não precisa organizar isso sozinha</h3>
+      <p class="fala" style="margin-bottom:12px">"Meu noivo não me ajuda em nada... Tenho q ficar cobrando, pensando em tudo, organizando tudo.... Até parece q estou casando sozinha!"</p>
+      <p>No Plano Completo, <strong>o noivo entra na mesma conta</strong>. Não para ele "ajudar quando der", mas porque decisão explicada em número para de ser palpite e vira conversa. É muito mais fácil concordar sobre a lista de convidados quando os dois estão vendo quanto custa cada nome.</p>
+      <span class="fonte">Fala pública de noiva em fórum brasileiro de casamento.</span>
+    </div>
   </div>
 </section>
 
-<!-- 9. NOIVA INTELIGENTE -->
+<!-- 11. ADMISSAO DE FALHA -->
+<section class="sec">
+  <div class="wrap">
+    <h2>O que isto aqui não é</h2>
+    <p>Não é assessoria. <strong>Ninguém vai ligar para o buffet no seu lugar</strong>, nem vai estar lá no dia para resolver o atraso do fotógrafo. Se o que você quer é alguém executando por você durante a festa, contrate um cerimonial do dia. É um bom gasto, e dentro do app você descobre quanto isso deve custar no seu porte de festa antes de fechar.</p>
+    <p>Também não é mágica: se você tem R$ 5 mil e quer 300 convidados com jantar servido, ele vai te dizer que não fecha. Vai te mostrar as três combinações que fecham, e é você quem escolhe.</p>
+    <p style="margin-bottom:0">O que está aqui é a parte cara e invisível do trabalho: <strong>saber o que decidir, em que ordem e por quanto.</strong> É a parte que faz a diferença entre um casamento de R$ 40 mil com cara de barato e um de R$ 7 mil com cara de caro.</p>
+  </div>
+</section>
+
+<!-- 12. NOIVA INTELIGENTE -->
 <section class="sec escura">
   <div class="wrap centro">
     <h2>A noiva inteligente não é a que gasta menos</h2>
@@ -303,7 +399,7 @@ u{text-decoration:underline}
   </div>
 </section>
 
-<!-- 10. BONUS -->
+<!-- 13. BONUS -->
 <section class="sec">
   <div class="wrap">
     <p class="centro"><span class="amarelo">Levando o Plano Completo:</span></p>
@@ -313,9 +409,9 @@ u{text-decoration:underline}
     <div class="bonus">
       <div class="topo">Bônus #1 &nbsp;|&nbsp; Checklist e Planner</div>
       <div class="corpo">
-        <p class="medo">"Tenho medo de esquecer alguma coisa e descobrir tarde demais."</p>
+        <p class="medo">"Vou me casar e agora, por onde começar???"</p>
         <img class="ic" src="images/1710091687-_1_-1024x933.webp" alt="Planner do casamento num tablet" style="max-width:135px">
-        <p>Tudo que precisa ser feito, em ordem, do pedido até o grande dia. Com espaço para anotações, convidados e playlist.</p>
+        <p>Tudo que precisa ser feito, em ordem, do pedido até o grande dia. Com espaço para anotações, convidados e playlist. É a diretriz que você procurou no Google às duas da manhã e não achou.</p>
         <p class="quanto">Quanto iria custar: R$97</p>
       </div>
     </div>
@@ -325,7 +421,7 @@ u{text-decoration:underline}
       <div class="corpo">
         <p class="medo">"Tenho medo de ficar com cara de casamento barato."</p>
         <img class="ic" src="images/3214398-1.png" alt="">
-        <p>Que cor para as madrinhas e para as mães? Coerência de cor é o que separa simples de improvisado, e não custa nada.</p>
+        <p>Que cor para as madrinhas e para as mães? Coerência de cor é o que separa simples de improvisado, e é a única coisa nesta página que melhora o casamento inteiro sem custar um real.</p>
         <p class="quanto">Quanto iria custar: R$79</p>
       </div>
     </div>
@@ -335,7 +431,7 @@ u{text-decoration:underline}
       <div class="corpo">
         <p class="medo">"E se eu escolher uma data que encarece tudo?"</p>
         <img class="ic" src="images/6663321-1.png" alt="">
-        <p>Com base nas flores de cada época, na concorrência de cada mês e no clima da sua região.</p>
+        <p>Com base nas flores de cada época, na concorrência de cada mês e no clima da sua região. Escolher a data é de graça hoje e caríssimo depois que os contratos estão assinados.</p>
         <p class="quanto">Quanto iria custar: R$59</p>
       </div>
     </div>
@@ -355,14 +451,14 @@ u{text-decoration:underline}
       <div class="corpo">
         <p class="medo">"Vou começar uma vida nova e não sei o que comprar."</p>
         <img class="ic" src="images/casa-ou-apartamento-qual-a-melhor-opcao-para-casal-scaled-1-1536x1024-_1_-1024x683.webp" alt="Casal na casa nova" style="max-width:190px">
-        <p>A lista completa do enxoval de casa nova, para não esquecer de nada.</p>
+        <p>A lista completa do enxoval de casa nova, para não esquecer de nada e não comprar duas vezes a mesma coisa.</p>
         <p class="quanto">Quanto iria custar: R$27</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 11. OFERTA -->
+<!-- 14. OFERTA -->
 <section class="sec vinho" id="oferta">
   <div class="wrap">
     <h2>ESCOLHA A MELHOR OFERTA PARA VOCÊ:</h2>
@@ -394,22 +490,42 @@ u{text-decoration:underline}
         <li><strong>Esse orçamento está caro?</strong> A faixa real por porte de festa</li>
         <li><strong>O que não pode faltar</strong> na sua festa</li>
         <li><strong>Por onde começar:</strong> a ordem certa de contratação</li>
-        <li>Acesso do noivo na mesma conta</li>
+        <li><strong>Acesso do noivo na mesma conta</strong>, para você não decidir sozinha</li>
         <li>Os 5 bônus da noiva</li>
       </ul>
+      <div class="soma">
+        <div class="cab">SÓ OS BÔNUS, SE FOSSEM VENDIDOS SEPARADOS</div>
+        <div class="lin"><span>Checklist e Planner</span><span class="pts"></span><span class="val">R$ 97</span></div>
+        <div class="lin"><span>Paleta de cores</span><span class="pts"></span><span class="val">R$ 79</span></div>
+        <div class="lin"><span>A data perfeita</span><span class="pts"></span><span class="val">R$ 59</span></div>
+        <div class="lin"><span>Casamento civil</span><span class="pts"></span><span class="val">R$ 67</span></div>
+        <div class="lin"><span>Enxoval de casa nova</span><span class="pts"></span><span class="val">R$ 27</span></div>
+        <div class="lin total"><span><strong>Total</strong></span><span class="pts"></span><span class="val">R$ 329</span></div>
+      </div>
       <p class="valor">R$ 97</p>
       <p class="parc">ou 5x de R$ 21,70</p>
       <a class="btn" href="LINK_CHECKOUT_COMPLETO">SIM! QUERO O PLANO COMPLETO!</a>
     </div>
+    <p class="centro" style="margin-top:16px"><strong>Coloque na régua da sua própria festa:</strong> na média nacional, um convidado custa R$ 414. O Plano Completo custa menos de um quarto de um convidado, e é ele que vai te dizer quantos convidados você pode ter.</p>
     <p class="centro mini" style="margin-top:14px">Pagamento único, sem pegadinhas e 7 dias de garantia.</p>
   </div>
 </section>
 
-<!-- 12. FAQ -->
+<!-- 15. FAQ -->
 <section class="sec cinza">
   <div class="wrap">
     <p class="faq-q">Meu casamento vai custar R$ 7 mil também?</p>
-    <p>Depende de três coisas: se tem espaço para usar sem alugar, se tem gente na família disposta a ajudar e quantas pessoas você vai convidar. Quem não tem nenhuma das três gasta mais e continua economizando muito, porque <strong>a ordem das decisões é a mesma em qualquer orçamento.</strong></p>
+    <p>Talvez não, e eu prefiro te dizer isso agora. Depende de três coisas: se tem espaço para usar sem alugar, se tem gente na família disposta a ajudar e quantas pessoas você vai convidar. Quem não tem nenhuma das três gasta mais e continua economizando muito, porque <strong>a ordem das decisões é a mesma em qualquer orçamento.</strong></p>
+
+    <p class="faq-q">Eu consigo organizar sozinha. Por que pagar por isso?</p>
+    <p>Consegue mesmo, e muita noiva faz. O que você vai gastar no lugar do dinheiro é tempo: semanas cotando para descobrir o preço justo de cada item, e algumas decisões caras que só aparecem como erro depois do contrato assinado. <strong>Um único "sim" dado na ordem errada custa mais que os dois planos somados.</strong></p>
+
+    <p class="faq-q">E se ele não conhecer a minha cidade?</p>
+    <!-- CONFIRME esta resposta com o comportamento real do app antes de publicar -->
+    <p>Ele trabalha com faixas de preço por região e por porte de festa, e pergunta onde você mora antes de responder. Em cidade pequena a faixa é mais larga, porque tem menos fornecedor para comparar. Mesmo ali, a ordem das decisões e o que perguntar antes de fechar continuam valendo igual.</p>
+
+    <p class="faq-q">Meu noivo não se envolve. Isso funciona só para mim?</p>
+    <p>Funciona. E no Plano Completo ele entra na mesma conta, o que costuma mudar a conversa: é mais fácil decidir junto quando os dois estão olhando o mesmo número, em vez de você explicando de novo por que não dá para chamar mais 20 pessoas.</p>
 
     <p class="faq-q">Legal... mas se é tão bom, por que não custa como uma assessoria?</p>
     <p>Uma assessora atende uma noiva por vez e cobra por hora. O aplicativo atende todas ao mesmo tempo. É o que acontece com o preço quando um serviço vira produto. <u>Sem pegadinhas nem letras miúdas.</u></p>
@@ -424,20 +540,45 @@ u{text-decoration:underline}
   </div>
 </section>
 
-<!-- 13. FECHAMENTO -->
+<!-- 16. AS TRES OPCOES -->
+<section class="sec">
+  <div class="wrap">
+    <h2>A partir daqui você tem três caminhos</h2>
+    <div class="opcao">
+      <b>1. Fechar esta página</b>
+      <p>E continuar pedindo orçamento sem saber se o preço que veio é o preço justo. Dá para fazer o casamento assim. Dois em cada três casais fazem, e são os mesmos dois que gastam mais do que planejaram.</p>
+    </div>
+    <div class="opcao">
+      <b>2. Descobrir tudo sozinha</b>
+      <p>Cotando, comparando, perguntando em grupo, aprendendo com o próprio erro. Funciona, e é assim que eu aprendi. Levou três meses e algumas decisões que eu tomaria diferente hoje.</p>
+    </div>
+    <div class="opcao destaque">
+      <b>3. Começar já sabendo a ordem</b>
+      <p>Por R$ 67 ou R$ 97, pagamento único, com 7 dias para pedir o dinheiro de volta se não fizer sentido para você.</p>
+    </div>
+    <p style="margin-top:18px"><strong>Só tem uma coisa que muda com o tempo:</strong> cada fornecedor que você fecha antes de saber a ordem é um valor que não volta atrás. Contrato assinado não se desfaz, e quanto mais perto da data, menos poder você tem para negociar qualquer coisa.</p>
+    <a class="btn" href="#oferta">QUERO COMEÇAR PELA ORDEM CERTA</a>
+  </div>
+</section>
+
+<!-- 17. FECHAMENTO -->
 <section class="sec azul" style="text-align:center">
   <div class="wrap">
     <img class="cor" src="images/corac-o-cora-png-fundo-transparente-0.png" alt="" style="width:48px;margin:0 auto 12px">
     <h2 style="color:#fff;text-shadow:0 2px 6px rgba(10,60,100,.38)">Tenha o casamento dos seus sonhos</h2>
-    <p style="color:#0D3550;font-weight:600">Aquele que faz as pessoas comentarem sobre ele para sempre. Sem precisar gastar uma fortuna para isso.</p>
+    <p style="color:#0D3550;font-weight:600">Daqui a dez anos você vai abrir essas fotos com alguém do lado perguntando como foi. Você vai lembrar da luz, da entrada e de quem chorou. Não vai lembrar de quanto custou a decoração da mesa, e ninguém que estava lá vai lembrar também.</p>
     <a class="btn" href="#oferta">QUERO O MEU CASAMENTO DOS SONHOS</a>
+    <div class="ps" style="text-align:left;border-top-color:rgba(13,53,80,.25);color:#0D3550">
+      <p><strong>P.S.</strong> Se você pulou até aqui: a Aline casou com 150 convidados por R$ 6.697,70, quando a média nacional é R$ 414 por convidado, e o método que ela usou virou um aplicativo que responde sobre o seu casamento, com o seu dinheiro, na sua cidade. São R$ 67 no plano Essencial e R$ 97 no Completo, que vem com o acesso do noivo e os 5 bônus. Pagamento único, 7 dias de garantia.</p>
+      <p style="margin-bottom:0"><strong>P.P.S.</strong> A decisão mais cara do seu casamento é a próxima que você vai tomar sem saber o preço justo. Ela custa mais que os R$ 97.</p>
+    </div>
   </div>
 </section>
 
 <footer class="rodape">
   <div class="wrap">
     <p>Suporte: <a href="mailto:casamentoeconomico2000@gmail.com">casamentoeconomico2000@gmail.com</a></p>
-    <p class="mini">Este produto não garante valor final de casamento nem resultado financeiro. As faixas e sugestões são referências de mercado e variam conforme região, data, número de convidados e fornecedores escolhidos.</p>
+    <p class="mini">Este produto não garante valor final de casamento nem resultado financeiro. O caso de R$ 6.697,70 é real e individual. As faixas e sugestões são referências de mercado e variam conforme região, data, número de convidados e fornecedores escolhidos. Os dados de mercado citados vêm do Informe Nacional da Indústria de Casamento 2025 (Casamentos.com.br / The Knot Worldwide) e das pesquisas Serasa + Casar.com + Opinion Box. As falas de noivas reproduzidas nesta página são públicas, de fóruns brasileiros de casamento, e não são depoimentos deste produto.</p>
   </div>
 </footer>
 
